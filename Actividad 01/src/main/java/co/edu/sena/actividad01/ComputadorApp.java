@@ -64,6 +64,11 @@ public class ComputadorApp {
         System.out.println(portatil.getTorre().getProcesador().getSerial());
         System.out.println(portatil.getTorre().getTarjetaMadre().getMarca());
         System.out.println(portatil.getTorre().getTarjetaMadre().getSerial());
-
+        if ((portatil.getTorre().getBateria().getSerial()==null)&&(portatil.getTorre().getBateria().getMarca()==null)){
+            System.out.println("No tiene bateria");
+        }else{
+            System.out.println(portatil.getTorre().getBateria().getMarca());
+            System.out.println(portatil.getTorre().getBateria().getSerial());
+        }
     }
 }
