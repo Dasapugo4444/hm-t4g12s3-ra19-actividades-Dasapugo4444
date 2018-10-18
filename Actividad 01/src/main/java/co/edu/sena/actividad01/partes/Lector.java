@@ -8,7 +8,9 @@ public class Lector extends Parte {
 
 
     public Lector(double ancho, double alto, double largo, String serial, String marca) {
-        super();
+        this.ancho=ancho;
+        this.alto=alto;
+        this.largo=largo;
     }
 
     public Lector(String serial, String marca) {

@@ -6,7 +6,8 @@ public class Parte {
     private String marca;
 
     public Parte(String serial, String marca){
-
+        this.serial = serial;
+        this.marca = marca;
     }
 
     public Parte() {

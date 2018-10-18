@@ -16,8 +16,14 @@ public class Torre extends Parte {
     private TarjetaVideo tarjetaVideo = new TarjetaVideo(null,null);
     private Bateria bateria = new Bateria(null,null);
 
-    public Torre(DiscoDuro discoDuro,MotherBoard tarjetaMadre, RAM tarjetaMemoria, Fuente fuente, Procesador procesador, Disipador disipador, String serial, String marca){
-
+    public Torre(DiscoDuro discoDuro, MotherBoard tarjetaMadre, RAM tarjetaMemoria, Fuente fuente, Procesador procesador, Disipador disipador, String serial, String marca){
+        super(serial, marca);
+        this.discoDuro=discoDuro;
+        this.tarjetaMadre=tarjetaMadre;
+        this.tarjetaMemoria=tarjetaMemoria;
+        this.fuente=fuente;
+        this.procesador=procesador;
+        this.disipador=disipador;
     }
 
     public DiscoDuro getDiscoDuro() {

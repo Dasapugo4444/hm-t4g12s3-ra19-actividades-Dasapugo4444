@@ -12,7 +12,7 @@ import co.edu.sena.actividad01.dispositivo.entrada.Mouse;
 public class Computador {
 
     private Torre torre;
-    private Mouse Mouse;
+    private Mouse mouse;
     private Teclado teclado;
     private Monitor pantalla;
     private Camara camara = new Camara(null,null);
@@ -21,7 +21,10 @@ public class Computador {
     private Scanner scanner = new Scanner(null,null);
 
     public Computador(Torre torre, Mouse mouse, Teclado teclado, Monitor pantalla){
-
+        this.torre=torre;
+        this.mouse=mouse;
+        this.teclado=teclado;
+        this.pantalla=pantalla;
     }
 
     public Torre getTorre() {
@@ -32,12 +35,12 @@ public class Computador {
         this.torre = torre;
     }
 
-    public co.edu.sena.actividad01.dispositivo.entrada.Mouse getMouse() {
-        return Mouse;
+    public Mouse getMouse() {
+        return mouse;
     }
 
-    public void setMouse(co.edu.sena.actividad01.dispositivo.entrada.Mouse mouse) {
-        Mouse = mouse;
+    public void setMouse(Mouse mouse) {
+        this.mouse = mouse;
     }
 
     public Teclado getTeclado() {
