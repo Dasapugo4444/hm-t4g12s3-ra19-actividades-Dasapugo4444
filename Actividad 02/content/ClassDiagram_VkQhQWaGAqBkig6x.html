@@ -1,0 +1,2233 @@
+<html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="report.css" type="text/css"/>
+	<title>Class Diagram - Collection</title>
+	<script type="text/javascript" src="report.js"></script>
+	<script type="text/javascript" src="link_popup.js"></script>
+	<script type="text/javascript" src="tooltip.js"></script>
+</head>
+<body style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;" onload="initPage();initDiagram();initGridDiagram();">
+	<div style="position:absolute; z-index:2; visibility:hidden;border-top: 2px #FF0000 solid;" id="spotlight_top">
+	</div>
+	<div style="position:absolute; z-index:2; visibility:hidden;border-top: 2px #FF0000 solid;" id="spotlight_bottom">
+	</div>
+	<div style="position:absolute; z-index:2; visibility:hidden;border-left: 2px #FF0000 solid;" id="spotlight_left">
+	</div>
+	<div style="position:absolute; z-index:2; visibility:hidden;border-left: 2px #FF0000 solid;" id="spotlight_right">
+	</div>
+	<canvas width="100" style="position:absolute; z-index:2; visibility:hidden" id="spotlight_c" height="100">
+	</canvas>
+	<div style="position:absolute; width:100px; height:100px; z-index:1; visibility:hidden" id="spotLightResourcesTop">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+<a href="#top"><img style="border:none" src="../images/icons/BackToTop.gif" alt="Back to top"/></a>				</td>
+				<td>
+<a href="javascript:clearSpotLightFromOpenSpecButton();"><img style="border:none" src="../images/icons/OpenSpecification.gif" alt="Open specification"/></a>				</td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute; width:100px; height:100px; z-index:1; visibility:hidden" id="spotLightResourcesRight">
+		<table border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+<a href="#top"><img style="border:none" src="../images/icons/BackToTop.gif" alt="Back to top"/></a>				</td>
+			</tr>
+			<tr>
+				<td>
+<a href="javascript:clearSpotLightFromOpenSpecButton();"><img style="border:none" src="../images/icons/OpenSpecification.gif" alt="Open specification"/></a>				</td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute;z-index:4;visibility:hidden" id="linkPopupMenuLayer">
+		<table border="0" width="100%" style="border-style:solid; border-width:1px; border-color:#000000; background:#FFFFFF; width:250px" id="linkPopupMenuTable">
+		</table>
+	</div>
+	<div style="position:absolute; z-index:1; visibility:hidden; " id="referenceIconLayer">
+		<table border="0" cellpadding="3" cellspacing="0" style="font-size:1;">
+			<tr>
+				<td>
+					<img src="../images/icons/Ref.gif" style="border:none" onclick="movePopupPositionToReferenceIconPosition();resetPopupForReference();switchPopupShowHideStatus();" />				</td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute; z-index:1; visibility:hidden; " id="subdiagramIconLayer">
+		<table border="0" cellpadding="3" cellspacing="0" style="font-size:1;">
+			<tr>
+				<td>
+					<img src="../images/icons/Subdiagram.gif" style="border:none" onclick="movePopupPositionToSubdiagramIconPosition();resetPopupForSubdiagram();switchPopupShowHideStatus();" />				</td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute; z-index:1; visibility:hidden; " id="transitorIconLayer">
+		<table border="0" cellpadding="3" cellspacing="0" style="font-size:1;">
+			<tr>
+				<td>
+					<img src="../images/icons/Transitor.gif" style="border:none" onclick="movePopupPositionToTransitorIconPosition();resetPopupForTransitor();switchPopupShowHideStatus();" />				</td>
+			</tr>
+		</table>
+	</div>
+	<div style="position:absolute; z-index:1; visibility:hidden; " id="documentationIconLayer">
+		<table border="0" cellpadding="3" cellspacing="0" style="font-size:1;">
+			<tr>
+				<td>
+					<img src="../images/icons/Documentation.png" style="border:none" />				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="HeaderText">
+		Diagramas Java	</div>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="HeaderLine1">
+			</td>
+		</tr>
+		<tr>
+			<td class="HeaderLine2">
+			</td>
+		</tr>
+		<tr>
+			<td class="HeaderLine3">
+			</td>
+		</tr>
+	</table>
+	<div style="position:absolute; z-index:21; visibility:hidden" id="referencedBys">
+		<table border="0" width="100%" style="border-style:solid; border-width:1px; border-color:#000000; background:#FFFFFF; width:250px" id="referencedBysTable">
+		</table>
+	</div>
+	<div style="position:absolute; z-index:21; visibility:hidden" id="vplink">
+		<table border="1" cellpadding="0" cellspacing="0" bordercolor="#A9BFD3">
+			<tr>
+				<td>
+					<table border="0" cellpadding="0" width="100%" cellspacing="0">
+						<tr style="background:#DDDDDD">
+							<td style="font-size: 12px;" align="left">
+								<select onchange="vpLinkToggleName()" id="vplink-linkType">
+	<option value="Project Link">Project Link</option>
+	<option value="Page URL">Page URL</option>
+</select>
+							</td>
+							<td style="font-size: 12px;" align="right">
+								<input onclick="javascript: vpLinkToggleName()" id="vplink-checkbox" type="checkbox" />
+								<label for="vplink-checkbox">with Name</label>							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<textarea id="vplink-text" style="width: 348px; height: 60px; border-color: #7EADD9; outline: none;"></textarea>				</td>
+			</tr>
+		</table>
+	</div>
+	<p class="PageTitle">
+		<span id="PageTitleText">
+			Class Diagram - Collection		</span>
+<a onclick="javascript: showVpLink('Diagramas Java.vpp://diagram/VkQhQWaGAqBkig6x', 'Collection\nDiagramas Java.vpp://diagram/VkQhQWaGAqBkig6x', 'Collection', this); return false;" style="padding-left: 16px; font-size: 12px" href="#"><img src="../images/icons/link.png" border="0"> link</a>	</p>
+	<div style="position: relative; padding-bottom: 20px;">
+		<table border="0" cellpadding="0" width="100%" cellspacing="0" style="position: absolute; top: 0; left: 0; z-index: 20;" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),hideLinkPopup(),hideReferencedBys();">
+			<tr>
+				<td>
+<span class="TableContent">Jump to:</span>					<select id="SelectShape" class="TableContent" onChange="scrollWin('diagram', this.value);hideLinkPopup();showSpotLight('diagram', this.value)">
+<option value="">Please select a model element</option>
+<option value="shape|161.0|1242.0|330.0|852.0|Class__N9hQWaGAqBkihCX.html|Class__N9hQWaGAqBkihCX.html|t99hQWaGAqBkihKH" id="optiont99hQWaGAqBkihKH">ArrayList : Class</option>
+<option value="shape|746.0|415.0|309.0|162.0|Class_Vt9hQWaGAqBkihF0.html|Class_Vt9hQWaGAqBkihF0.html|t99hQWaGAqBkihKJ" id="optiont99hQWaGAqBkihKJ">Itr : Class</option>
+<option value="shape|835.0|637.0|130.0|128.0|Class_Dt9hQWaGAqBkihGP.html|Class_Dt9hQWaGAqBkihGP.html|d99hQWaGAqBkihKL" id="optiond99hQWaGAqBkihKL">ListItr : Class</option>
+<option value="shape|746.0|810.0|368.0|342.0|Class_rt9hQWaGAqBkihGn.html|Class_rt9hQWaGAqBkihGn.html|d99hQWaGAqBkihKN" id="optiond99hQWaGAqBkihKN">SubList : Class</option>
+<option value="shape|746.0|1197.0|430.0|192.0|Class_wd9hQWaGAqBkihH9.html|Class_wd9hQWaGAqBkihH9.html|d99hQWaGAqBkihKP" id="optiond99hQWaGAqBkihKP">ArrayListSpliterator : Class</option>
+<option value="shape|349.0|785.0|287.0|327.0|Class_Vy1hQWaGAqBkig9h.html|Class_Vy1hQWaGAqBkig9h.html|xq1hQWaGAqBkihB0" id="optionxq1hQWaGAqBkihB0">AbstractList : Class</option>
+<option value="shape|511.0|1512.0|296.0|312.0|Class_MK1hQWaGAqBkig_Y.html|Class_MK1hQWaGAqBkig_Y.html|Jq1hQWaGAqBkihB6" id="optionJq1hQWaGAqBkihB6">SubList : Class</option>
+<option value="shape|472.0|2154.0|374.0|53.0|Class_OK1hQWaGAqBkihAp.html|Class_OK1hQWaGAqBkihAp.html|Jq1hQWaGAqBkihB8" id="optionJq1hQWaGAqBkihB8">RandomAccessSubList : Class</option>
+<option value="shape|702.0|137.0|193.0|132.0|Class_gK1hQWaGAqBkig_y.html|Class_gK1hQWaGAqBkig_y.html|Jq1hQWaGAqBkihB2" id="optionJq1hQWaGAqBkihB2">Itr : Class</option>
+<option value="shape|733.0|329.0|130.0|128.0|Class_4K1hQWaGAqBkig_C.html|Class_4K1hQWaGAqBkig_C.html|Jq1hQWaGAqBkihB4" id="optionJq1hQWaGAqBkihB4">ListItr : Class</option>
+<option value="shape|362.0|428.0|262.0|297.0|Class_JUShQWaGAqBkig7u.html|Class_JUShQWaGAqBkig7u.html|J0ShQWaGAqBkig9K" id="optionJ0ShQWaGAqBkig9K">AbstractCollection : Class</option>
+<option value="shape|369.0|45.0|248.0|323.0|Class_WlfBQWaGAqBkig4_.html|Class_WlfBQWaGAqBkig4_.html|WBMhQWaGAqBkig7b" id="optionWBMhQWaGAqBkig7b">Collection : Class</option>
+<option value="shape|142.0|0.0|725.0|2227.0|Package_GlfBQWaGAqBkig49.html|Package_GlfBQWaGAqBkig49.html|2BMhQWaGAqBkig7d" id="option2BMhQWaGAqBkig7d">util : Package</option>
+<option value="shape|174.0|90.0|237.0|83.0|Class_y1dBQWaGAqBkig4M.html|Class_y1dBQWaGAqBkig4M.html|uaEhQWaGAqBkig7L" id="optionuaEhQWaGAqBkig7L">Iterable : Class</option>
+<option value="shape|154.0|45.0|277.0|148.0|Package_A1dBQWaGAqBkig4L.html|Package_A1dBQWaGAqBkig4L.html|.aEhQWaGAqBkig7N" id="option.aEhQWaGAqBkig7N">lang : Package</option>
+<option value="shape|122.0|0.0|969.0|2242.0|Package_fVdBQWaGAqBkig4K.html|Package_fVdBQWaGAqBkig4K.html|.aEhQWaGAqBkig7P" id="option.aEhQWaGAqBkig7P">java : Package</option>
+</select>				</td>
+			</tr>
+		</table>
+		<table border="0" cellpadding="0" width="100%" cellspacing="0" style="position: relative; top: 24;">
+			<tr>
+				<td>
+					<img id="diagram" src="../images/Collection.png" usemap="#diagram_map" class="Image" width="1180" height="2246"/>
+					<map name="diagram_map">
+<area imageId="diagram" coords="285.0, 173.0, 285.0, 199.0, 282.0, 199.0, 282.0, 213.0, 285.0, 213.0, 285.0, 216.0, 299.0, 216.0, 299.0, 213.0, 369.0, 213.0, 369.0, 199.0, 299.0, 199.0, 299.0, 173.0" coords2="285.0, 173.0, 285.0, 199.0, 282.0, 199.0, 282.0, 213.0, 285.0, 213.0, 285.0, 216.0, 299.0, 216.0, 299.0, 213.0, 369.0, 213.0, 369.0, 199.0, 299.0, 199.0, 299.0, 173.0" shape="poly" alt=":Generalization" id="areadiagram_map_OBMhQWaGAqBkig7f_default" href="Generalization_blfBQWaGAqBkig5_.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="486.0, 368.0, 486.0, 428.0, 500.0, 428.0, 500.0, 368.0" coords2="486.0, 368.0, 486.0, 428.0, 500.0, 428.0, 500.0, 368.0" shape="poly" alt=":Realization" id="areadiagram_map_p0ShQWaGAqBkig9M_default" href="Realization_o0ShQWaGAqBkig8z.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="486.0, 725.0, 486.0, 785.0, 500.0, 785.0, 500.0, 725.0" coords2="486.0, 725.0, 486.0, 785.0, 500.0, 785.0, 500.0, 725.0" shape="poly" alt=":Generalization" id="areadiagram_map_Jq1hQWaGAqBkihB._default" href="Generalization_BK1hQWaGAqBkihA6.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="486.0, 1112.0, 486.0, 1155.0, 483.0, 1155.0, 483.0, 1169.0, 486.0, 1169.0, 486.0, 1172.0, 500.0, 1172.0, 500.0, 1169.0, 652.0, 1169.0, 652.0, 1512.0, 666.0, 1512.0, 666.0, 1169.0, 669.0, 1169.0, 669.0, 1155.0, 666.0, 1155.0, 666.0, 1152.0, 652.0, 1152.0, 652.0, 1155.0, 500.0, 1155.0, 500.0, 1112.0" coords2="486.0, 1112.0, 486.0, 1155.0, 483.0, 1155.0, 483.0, 1169.0, 486.0, 1169.0, 486.0, 1172.0, 500.0, 1172.0, 500.0, 1169.0, 652.0, 1169.0, 652.0, 1512.0, 666.0, 1512.0, 666.0, 1169.0, 669.0, 1169.0, 669.0, 1155.0, 666.0, 1155.0, 666.0, 1152.0, 652.0, 1152.0, 652.0, 1155.0, 500.0, 1155.0, 500.0, 1112.0" shape="poly" alt=":Generalization" id="areadiagram_map_pq1hQWaGAqBkihCA_default" href="Generalization_tK1hQWaGAqBkihBO.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="733.0, 269.0, 733.0, 329.0, 747.0, 329.0, 747.0, 269.0" coords2="733.0, 269.0, 733.0, 329.0, 747.0, 329.0, 747.0, 269.0" shape="poly" alt=":Generalization" id="areadiagram_map_pq1hQWaGAqBkihCC_default" href="Generalization_1K1hQWaGAqBkihBN.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="652.0, 1824.0, 652.0, 2154.0, 666.0, 2154.0, 666.0, 1824.0" coords2="652.0, 1824.0, 652.0, 2154.0, 666.0, 2154.0, 666.0, 1824.0" shape="poly" alt=":Generalization" id="areadiagram_map_pq1hQWaGAqBkihCE_default" href="Generalization__K1hQWaGAqBkihBn.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="486.0, 1112.0, 486.0, 1155.0, 333.0, 1155.0, 333.0, 1152.0, 319.0, 1152.0, 319.0, 1155.0, 316.0, 1155.0, 316.0, 1169.0, 319.0, 1169.0, 319.0, 1242.0, 333.0, 1242.0, 333.0, 1169.0, 486.0, 1169.0, 486.0, 1172.0, 500.0, 1172.0, 500.0, 1169.0, 503.0, 1169.0, 503.0, 1155.0, 500.0, 1155.0, 500.0, 1112.0" coords2="486.0, 1112.0, 486.0, 1155.0, 333.0, 1155.0, 333.0, 1152.0, 319.0, 1152.0, 319.0, 1155.0, 316.0, 1155.0, 316.0, 1169.0, 319.0, 1169.0, 319.0, 1242.0, 333.0, 1242.0, 333.0, 1169.0, 486.0, 1169.0, 486.0, 1172.0, 500.0, 1172.0, 500.0, 1169.0, 503.0, 1169.0, 503.0, 1155.0, 500.0, 1155.0, 500.0, 1112.0" shape="poly" alt=":Generalization" id="areadiagram_map_d99hQWaGAqBkihKR_default" href="Generalization_Ud9hQWaGAqBkihIi.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="636.0, 951.0, 636.0, 965.0, 746.0, 965.0, 746.0, 951.0" coords2="636.0, 951.0, 636.0, 965.0, 746.0, 965.0, 746.0, 951.0" shape="poly" alt=":Generalization" id="areadiagram_map_999hQWaGAqBkihKT_default" href="Generalization_jd9hQWaGAqBkihJb.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="893.0, 577.0, 893.0, 637.0, 907.0, 637.0, 907.0, 577.0" coords2="893.0, 577.0, 893.0, 637.0, 907.0, 637.0, 907.0, 577.0" shape="poly" alt=":Generalization" id="areadiagram_map_999hQWaGAqBkihKV_default" href="Generalization_9d9hQWaGAqBkihJa.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Resizable-array implementation of the &amp;​lt;tt&amp;​gt;List&amp;​lt;/tt&amp;​gt; interface. 
+      &amp;nbsp;Implements
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      all optional list operations, and permits all elements, including
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;null&amp;​lt;/tt&amp;​gt;. &amp;nbsp;In addition to implementing the &amp;​lt;tt&amp;​gt;List&amp;​lt;/tt&amp;​gt; interface,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      this class provides methods to manipulate the size of the array that is
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      used internally to store the list. &amp;nbsp;(This class is roughly equivalent to
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;Vector&amp;​lt;/tt&amp;​gt;, except that it is unsynchronized.)
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;The &amp;​lt;tt&amp;​gt;size&amp;​lt;/tt&amp;​gt;, &amp;​lt;tt&amp;​gt;isEmpty&amp;​lt;/tt&amp;​gt;, &amp;​lt;tt&amp;​gt;get&amp;​lt;/tt&amp;​gt;, &amp;​lt;tt&amp;​gt;set&amp;​lt;/tt&amp;​gt;,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;iterator&amp;​lt;/tt&amp;​gt;, and &amp;​lt;tt&amp;​gt;listIterator&amp;​lt;/tt&amp;​gt; operations run in constant
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      time. &amp;nbsp;The &amp;​lt;tt&amp;​gt;add&amp;​lt;/tt&amp;​gt; operation runs in &amp;​lt;i&amp;​gt;amortized constant time&amp;​lt;/i&amp;​gt;,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      that is, adding n elements requires O(n) time. &amp;nbsp;All of the other 
+      operations
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      run in linear time (roughly speaking). &amp;nbsp;The constant factor is low 
+      compared
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      to that for the &amp;​lt;tt&amp;​gt;LinkedList&amp;​lt;/tt&amp;​gt; implementation.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;Each &amp;​lt;tt&amp;​gt;ArrayList&amp;​lt;/tt&amp;​gt; instance has a &amp;​lt;i&amp;​gt;capacity&amp;​lt;/i&amp;​gt;. &amp;nbsp;The capacity 
+      is
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the size of the array used to store the elements in the list. &amp;nbsp;It is 
+      always
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      at least as large as the list size. &amp;nbsp;As elements are added to an 
+      ArrayList,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      its capacity grows automatically. &amp;nbsp;The details of the growth policy are 
+      not
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      specified beyond the fact that adding an element has constant amortized
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      time cost.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;An application can increase the capacity of an &amp;​lt;tt&amp;​gt;ArrayList&amp;​lt;/tt&amp;​gt; 
+      instance
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      before adding a large number of elements using the 
+      &amp;​lt;tt&amp;​gt;ensureCapacity&amp;​lt;/tt&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      operation. &amp;nbsp;This may reduce the amount of incremental reallocation.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;&amp;​lt;strong&amp;​gt;Note that this implementation is not synchronized.&amp;​lt;/strong&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      If multiple threads access an &amp;​lt;tt&amp;​gt;ArrayList&amp;​lt;/tt&amp;​gt; instance concurrently,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      and at least one of the threads modifies the list structurally, it
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;i&amp;​gt;must&amp;​lt;/i&amp;​gt; be synchronized externally. &amp;nbsp;(A structural modification is
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      any operation that adds or deletes one or more elements, or explicitly
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      resizes the backing array; merely setting the value of an element is not
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      a structural modification.) &amp;nbsp;This is typically accomplished by
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      synchronizing on some object that naturally encapsulates the list.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      If no such object exists, the list should be &amp;quot;wrapped&amp;quot; using the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link Collections#synchronizedList Collections.synchronizedList}
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      method. &amp;nbsp;This is best done at creation time, to prevent accidental
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      unsynchronized access to the list:&amp;​lt;pre&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      List list = Collections.synchronizedList(new ArrayList(...));&amp;​lt;/pre&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;&amp;​lt;a name=&amp;quot;fail-fast&amp;quot;&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      The iterators returned by this class's {@link #iterator() iterator} and
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link #listIterator(int) listIterator} methods are 
+      &amp;​lt;em&amp;​gt;fail-fast&amp;​lt;/em&amp;​gt;:&amp;​lt;/a&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      if the list is structurally modified at any time after the iterator is
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      created, in any way except through the iterator's own
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link ListIterator#remove() remove} or
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link ListIterator#add(Object) add} methods, the iterator will throw a
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link ConcurrentModificationException}. &amp;nbsp;Thus, in the face of
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      concurrent modification, the iterator fails quickly and cleanly, rather
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      than risking arbitrary, non-deterministic behavior at an undetermined
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      time in the future.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;Note that the fail-fast behavior of an iterator cannot be guaranteed
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      as it is, generally speaking, impossible to make any hard guarantees in 
+      the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      presence of unsynchronized concurrent modification. &amp;nbsp;Fail-fast iterators
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      throw {@code ConcurrentModificationException} on a best-effort basis.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Therefore, it would be wrong to write a program that depended on this
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      exception for its correctness: &amp;nbsp;&amp;​lt;i&amp;​gt;the fail-fast behavior of iterators
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      should be used only to detect bugs.&amp;​lt;/i&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;This class is a member of the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;a href=&amp;quot;{@docRoot}/../technotes/guides/collections/index.html&amp;quot;&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Java Collections Framework&amp;​lt;/a&amp;​gt;.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Josh Bloch
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Neal Gafter
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Collection
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;List
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;LinkedList
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Vector
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @since &amp;nbsp;&amp;nbsp;1.2
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="161, 1242, 491, 2094" coords2="161, 1242, 491, 2094" shape="rect" alt="ArrayList:Class" id="areadiagram_map_t99hQWaGAqBkihKH_default" href="Class__N9hQWaGAqBkihCX.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      An optimized version of AbstractList.Itr
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="746, 415, 1055, 577" coords2="746, 415, 1055, 577" shape="rect" alt="Itr:Class" id="areadiagram_map_t99hQWaGAqBkihKJ_default" href="Class_Vt9hQWaGAqBkihF0.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      An optimized version of AbstractList.ListItr
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="835, 637, 965, 765" coords2="835, 637, 965, 765" shape="rect" alt="ListItr:Class" id="areadiagram_map_d99hQWaGAqBkihKL_default" href="Class_Dt9hQWaGAqBkihGP.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" coords="746, 810, 1114, 1152" coords2="746, 810, 1114, 1152" shape="rect" alt="SubList:Class" id="areadiagram_map_d99hQWaGAqBkihKN_default" href="Class_rt9hQWaGAqBkihGn.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Index-based split-by-two, lazily initialized Spliterator
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="746, 1197, 1176, 1389" coords2="746, 1197, 1176, 1389" shape="rect" alt="ArrayListSpliterator:Class" id="areadiagram_map_d99hQWaGAqBkihKP_default" href="Class_wd9hQWaGAqBkihH9.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      This class provides a skeletal implementation of the {@link List}
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      interface to minimize the effort required to implement this interface
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      backed by a &amp;quot;random access&amp;quot; data store (such as an array). &amp;nbsp;For 
+      sequential
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      access data (such as a linked list), {@link AbstractSequentialList} 
+      should
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      be used in preference to this class.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;To implement an unmodifiable list, the programmer needs only to extend
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      this class and provide implementations for the {@link #get(int)} and
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link List#size() size()} methods.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;To implement a modifiable list, the programmer must additionally
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      override the {@link #set(int, Object) set(int, E)} method (which 
+      otherwise
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      throws an {@code UnsupportedOperationException}). &amp;nbsp;If the list is
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      variable-size the programmer must additionally override the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link #add(int, Object) add(int, E)} and {@link #remove(int)} methods.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;The programmer should generally provide a void (no argument) and 
+      collection
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      constructor, as per the recommendation in the {@link Collection} 
+      interface
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      specification.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;Unlike the other abstract collection implementations, the programmer 
+      does
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;i&amp;​gt;not&amp;​lt;/i&amp;​gt; have to provide an iterator implementation; the iterator and
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      list iterator are implemented by this class, on top of the &amp;quot;random 
+      access&amp;quot;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      methods:
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link #get(int)},
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link #set(int, Object) set(int, E)},
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link #add(int, Object) add(int, E)} and
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link #remove(int)}.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;The documentation for each non-abstract method in this class 
+      describes its
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      implementation in detail. &amp;nbsp;Each of these methods may be overridden if the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      collection being implemented admits a more efficient implementation.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;This class is a member of the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;a href=&amp;quot;{@docRoot}/../technotes/guides/collections/index.html&amp;quot;&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Java Collections Framework&amp;​lt;/a&amp;​gt;.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Josh Bloch
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Neal Gafter
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @since 1.2
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="349, 785, 636, 1112" coords2="349, 785, 636, 1112" shape="rect" alt="AbstractList:Class" id="areadiagram_map_xq1hQWaGAqBkihB0_default" href="Class_Vy1hQWaGAqBkig9h.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" coords="511, 1512, 807, 1824" coords2="511, 1512, 807, 1824" shape="rect" alt="SubList:Class" id="areadiagram_map_Jq1hQWaGAqBkihB6_default" href="Class_MK1hQWaGAqBkig_Y.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="472, 2154, 846, 2207" coords2="472, 2154, 846, 2207" shape="rect" alt="RandomAccessSubList:Class" id="areadiagram_map_Jq1hQWaGAqBkihB8_default" href="Class_OK1hQWaGAqBkihAp.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="702, 137, 895, 269" coords2="702, 137, 895, 269" shape="rect" alt="Itr:Class" id="areadiagram_map_Jq1hQWaGAqBkihB2_default" href="Class_gK1hQWaGAqBkig_y.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="733, 329, 863, 457" coords2="733, 329, 863, 457" shape="rect" alt="ListItr:Class" id="areadiagram_map_Jq1hQWaGAqBkihB4_default" href="Class_4K1hQWaGAqBkig_C.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      This class provides a skeletal implementation of the &amp;​lt;tt&amp;​gt;Collection&amp;​lt;/tt&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      interface, to minimize the effort required to implement this interface. 
+      &amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      To implement an unmodifiable collection, the programmer needs only to
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      extend this class and provide implementations for the &amp;​lt;tt&amp;​gt;iterator&amp;​lt;/tt&amp;​gt; 
+      and
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;size&amp;​lt;/tt&amp;​gt; methods. &amp;nbsp;(The iterator returned by the &amp;​lt;tt&amp;​gt;iterator&amp;​lt;/tt&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      method must implement &amp;​lt;tt&amp;​gt;hasNext&amp;​lt;/tt&amp;​gt; and &amp;​lt;tt&amp;​gt;next&amp;​lt;/tt&amp;​gt;.)&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      To implement a modifiable collection, the programmer must additionally
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      override this class's &amp;​lt;tt&amp;​gt;add&amp;​lt;/tt&amp;​gt; method (which otherwise throws an
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;UnsupportedOperationException&amp;​lt;/tt&amp;​gt;), and the iterator returned by the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;iterator&amp;​lt;/tt&amp;​gt; method must additionally implement its &amp;​lt;tt&amp;​gt;remove&amp;​lt;/tt&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      method.&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      The programmer should generally provide a void (no argument) and
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;Collection&amp;​lt;/tt&amp;​gt; constructor, as per the recommendation in the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;Collection&amp;​lt;/tt&amp;​gt; interface specification.&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      The documentation for each non-abstract method in this class describes 
+      its
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      implementation in detail. &amp;nbsp;Each of these methods may be overridden if
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the collection being implemented admits a more efficient 
+      implementation.&amp;​lt;p&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      This class is a member of the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;a href=&amp;quot;{@docRoot}/../technotes/guides/collections/index.html&amp;quot;&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Java Collections Framework&amp;​lt;/a&amp;​gt;.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Josh Bloch
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Neal Gafter
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see Collection
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @since 1.2
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="362, 428, 624, 725" coords2="362, 428, 624, 725" shape="rect" alt="AbstractCollection:Class" id="areadiagram_map_J0ShQWaGAqBkig9K_default" href="Class_JUShQWaGAqBkig7u.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      The root interface in the &amp;​lt;i&amp;​gt;collection hierarchy&amp;​lt;/i&amp;​gt;. &amp;nbsp;A collection
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      represents a group of objects, known as its &amp;​lt;i&amp;​gt;elements&amp;​lt;/i&amp;​gt;. &amp;nbsp;Some
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      collections allow duplicate elements and others do not. &amp;nbsp;Some are ordered
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      and others unordered. &amp;nbsp;The JDK does not provide any &amp;​lt;i&amp;​gt;direct&amp;​lt;/i&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      implementations of this interface: it provides implementations of more
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      specific subinterfaces like &amp;​lt;tt&amp;​gt;Set&amp;​lt;/tt&amp;​gt; and &amp;​lt;tt&amp;​gt;List&amp;​lt;/tt&amp;​gt;. &amp;nbsp;This 
+      interface
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      is typically used to pass collections around and manipulate them where
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      maximum generality is desired.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;&amp;​lt;i&amp;​gt;Bags&amp;​lt;/i&amp;​gt; or &amp;​lt;i&amp;​gt;multisets&amp;​lt;/i&amp;​gt; (unordered collections that may 
+      contain
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      duplicate elements) should implement this interface directly.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;All general-purpose &amp;​lt;tt&amp;​gt;Collection&amp;​lt;/tt&amp;​gt; implementation classes (which
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      typically implement &amp;​lt;tt&amp;​gt;Collection&amp;​lt;/tt&amp;​gt; indirectly through one of its
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      subinterfaces) should provide two &amp;quot;standard&amp;quot; constructors: a void (no
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      arguments) constructor, which creates an empty collection, and a
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      constructor with a single argument of type &amp;​lt;tt&amp;​gt;Collection&amp;​lt;/tt&amp;​gt;, which
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      creates a new collection with the same elements as its argument. &amp;nbsp;In
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      effect, the latter constructor allows the user to copy any collection,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      producing an equivalent collection of the desired implementation type.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      There is no way to enforce this convention (as interfaces cannot contain
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      constructors) but all of the general-purpose &amp;​lt;tt&amp;​gt;Collection&amp;​lt;/tt&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      implementations in the Java platform libraries comply.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;The &amp;quot;destructive&amp;quot; methods contained in this interface, that is, the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      methods that modify the collection on which they operate, are specified 
+      to
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      throw &amp;​lt;tt&amp;​gt;UnsupportedOperationException&amp;​lt;/tt&amp;​gt; if this collection does not
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      support the operation. &amp;nbsp;If this is the case, these methods may, but are 
+      not
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      required to, throw an &amp;​lt;tt&amp;​gt;UnsupportedOperationException&amp;​lt;/tt&amp;​gt; if the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      invocation would have no effect on the collection. &amp;nbsp;For example, invoking
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the {@link #addAll(Collection)} method on an unmodifiable collection may,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      but is not required to, throw the exception if the collection to be added
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      is empty.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;&amp;​lt;a name=&amp;quot;optional-restrictions&amp;quot;&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Some collection implementations have restrictions on the elements that
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      they may contain.&amp;​lt;/a&amp;​gt; &amp;nbsp;For example, some implementations prohibit null 
+      elements,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      and some have restrictions on the types of their elements. &amp;nbsp;Attempting to
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      add an ineligible element throws an unchecked exception, typically
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;NullPointerException&amp;​lt;/tt&amp;​gt; or &amp;​lt;tt&amp;​gt;ClassCastException&amp;​lt;/tt&amp;​gt;. &amp;nbsp;Attempting
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      to query the presence of an ineligible element may throw an exception,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      or it may simply return false; some implementations will exhibit the 
+      former
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      behavior and some will exhibit the latter. &amp;nbsp;More generally, attempting an
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      operation on an ineligible element whose completion would not result in
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the insertion of an ineligible element into the collection may throw an
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      exception or it may succeed, at the option of the implementation.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Such exceptions are marked as &amp;quot;optional&amp;quot; in the specification for this
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      interface.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;It is up to each collection to determine its own synchronization
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      policy. &amp;nbsp;In the absence of a stronger guarantee by the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      implementation, undefined behavior may result from the invocation
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      of any method on a collection that is being mutated by another
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      thread; this includes direct invocations, passing the collection to
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      a method that might perform invocations, and using an existing
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      iterator to examine the collection.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;Many methods in Collections Framework interfaces are defined in
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      terms of the {@link Object#equals(Object) equals} method. &amp;nbsp;For example,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the specification for the {@link #contains(Object) contains(Object o)}
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      method says: &amp;quot;returns &amp;​lt;tt&amp;​gt;true&amp;​lt;/tt&amp;​gt; if and only if this collection
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      contains at least one element &amp;​lt;tt&amp;​gt;e&amp;​lt;/tt&amp;​gt; such that
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;tt&amp;​gt;(o==null ? e==null : o.equals(e))&amp;​lt;/tt&amp;​gt;.&amp;quot; &amp;nbsp;This specification should
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;i&amp;​gt;not&amp;​lt;/i&amp;​gt; be construed to imply that invoking 
+      &amp;​lt;tt&amp;​gt;Collection.contains&amp;​lt;/tt&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      with a non-null argument &amp;​lt;tt&amp;​gt;o&amp;​lt;/tt&amp;​gt; will cause &amp;​lt;tt&amp;​gt;o.equals(e)&amp;​lt;/tt&amp;​gt; to be
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      invoked for any element &amp;​lt;tt&amp;​gt;e&amp;​lt;/tt&amp;​gt;. &amp;nbsp;Implementations are free to 
+      implement
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      optimizations whereby the &amp;​lt;tt&amp;​gt;equals&amp;​lt;/tt&amp;​gt; invocation is avoided, for
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      example, by first comparing the hash codes of the two elements. &amp;nbsp;(The
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@link Object#hashCode()} specification guarantees that two objects with
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      unequal hash codes cannot be equal.) &amp;nbsp;More generally, implementations of
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the various Collections Framework interfaces are free to take advantage 
+      of
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the specified behavior of underlying {@link Object} methods wherever the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      implementor deems it appropriate.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;Some collection operations which perform recursive traversal of the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      collection may fail with an exception for self-referential instances 
+      where
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the collection directly or indirectly contains itself. This includes the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      {@code clone()}, {@code equals()}, {@code hashCode()} and {@code 
+      toString()}
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      methods. Implementations may optionally handle the self-referential 
+      scenario,
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      however most current implementations do not do so.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;p&amp;​gt;This interface is a member of the
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;a href=&amp;quot;{@docRoot}/../technotes/guides/collections/index.html&amp;quot;&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Java Collections Framework&amp;​lt;/a&amp;​gt;.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @implSpec
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      The default method implementations (inherited or otherwise) do not apply 
+      any
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      synchronization protocol. &amp;nbsp;If a {@code Collection} implementation has a
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      specific synchronization protocol, then it must override default
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      implementations to apply that protocol.
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @param &amp;​lt;E&amp;​gt; the type of elements in this collection
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Josh Bloch
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @author &amp;nbsp;Neal Gafter
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Set
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;List
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Map
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;SortedSet
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;SortedMap
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;HashSet
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;TreeSet
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;ArrayList
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;LinkedList
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Vector
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Collections
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;Arrays
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @see &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;AbstractCollection
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @since 1.2
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="369, 45, 617, 368" coords2="369, 45, 617, 368" shape="rect" alt="Collection:Class" id="areadiagram_map_WBMhQWaGAqBkig7b_default" href="Class_WlfBQWaGAqBkig4_.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" docContent="&amp;lt;html&amp;gt;
+  &amp;lt;head&amp;gt;
+    
+  &amp;lt;/head&amp;gt;
+  &amp;lt;body&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      Implementing this interface allows an object to be the target of
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      the &amp;quot;for-each loop&amp;quot; statement. See
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;strong&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;a href=&amp;quot;{@docRoot}/../technotes/guides/language/foreach.html&amp;quot;&amp;​gt;For-each 
+      Loop&amp;​lt;/a&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;​lt;/strong&amp;​gt;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @param &amp;​lt;T&amp;​gt; the type of elements returned by the iterator
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      &amp;nbsp;
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @since 1.5
+    &amp;lt;/p&amp;gt;
+    &amp;lt;p style=&amp;quot;margin-top:0;&amp;quot;&amp;gt;
+      @jls 14.14.2 The enhanced for statement
+    &amp;lt;/p&amp;gt;
+  &amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+" coords="174, 90, 411, 173" coords2="174, 90, 411, 173" shape="rect" alt="Iterable:Class" id="areadiagram_map_uaEhQWaGAqBkig7L_default" href="Class_y1dBQWaGAqBkig4M.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon(),showTooltip(this)" onmousedown="clearSpotLight();" onmouseout="hideTooltip()"/>
+<area imageId="diagram" coords="154, 45, 431, 193" coords2="154, 45, 431, 193" shape="rect" alt="lang:Package" id="areadiagram_map_.aEhQWaGAqBkig7N_default" href="Package_A1dBQWaGAqBkig4L.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="142, 0, 867, 2227" coords2="142, 0, 867, 2227" shape="rect" alt="util:Package" id="areadiagram_map_2BMhQWaGAqBkig7d_default" href="Package_GlfBQWaGAqBkig49.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+<area imageId="diagram" coords="122, 0, 1091, 2242" coords2="122, 0, 1091, 2242" shape="rect" alt="java:Package" id="areadiagram_map_.aEhQWaGAqBkig7P_default" href="Package_fVdBQWaGAqBkig4K.html" onmouseover="hideReferenceIcon(),hideSubdiagramIcon(),hideTransitorIcon()" onmousedown="clearSpotLight();"/>
+</map>
+				</td>
+			</tr>
+		</table>
+		<p>
+		</p>
+	</div>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+				Model Elements			</td>
+		</tr>
+		<tr>
+			<td style="height: 5px">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="30%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Description</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class__N9hQWaGAqBkihCX.html" class="ItemLink">ArrayList : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Resizable-array implementation of the &lt;tt&gt;List&lt;/tt&gt; interface. 
+      &nbsp;Implements
+    </p>
+    <p style="margin-top:0;">
+      all optional list operations, and permits all elements, including
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;null&lt;/tt&gt;. &nbsp;In addition to implementing the &lt;tt&gt;List&lt;/tt&gt; interface,
+    </p>
+    <p style="margin-top:0;">
+      this class provides methods to manipulate the size of the array that is
+    </p>
+    <p style="margin-top:0;">
+      used internally to store the list. &nbsp;(This class is roughly equivalent to
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Vector&lt;/tt&gt;, except that it is unsynchronized.)
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The &lt;tt&gt;size&lt;/tt&gt;, &lt;tt&gt;isEmpty&lt;/tt&gt;, &lt;tt&gt;get&lt;/tt&gt;, &lt;tt&gt;set&lt;/tt&gt;,
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;iterator&lt;/tt&gt;, and &lt;tt&gt;listIterator&lt;/tt&gt; operations run in constant
+    </p>
+    <p style="margin-top:0;">
+      time. &nbsp;The &lt;tt&gt;add&lt;/tt&gt; operation runs in &lt;i&gt;amortized constant time&lt;/i&gt;,
+    </p>
+    <p style="margin-top:0;">
+      that is, adding n elements requires O(n) time. &nbsp;All of the other 
+      operations
+    </p>
+    <p style="margin-top:0;">
+      run in linear time (roughly speaking). &nbsp;The constant factor is low 
+      compared
+    </p>
+    <p style="margin-top:0;">
+      to that for the &lt;tt&gt;LinkedList&lt;/tt&gt; implementation.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Each &lt;tt&gt;ArrayList&lt;/tt&gt; instance has a &lt;i&gt;capacity&lt;/i&gt;. &nbsp;The capacity 
+      is
+    </p>
+    <p style="margin-top:0;">
+      the size of the array used to store the elements in the list. &nbsp;It is 
+      always
+    </p>
+    <p style="margin-top:0;">
+      at least as large as the list size. &nbsp;As elements are added to an 
+      ArrayList,
+    </p>
+    <p style="margin-top:0;">
+      its capacity grows automatically. &nbsp;The details of the growth policy are 
+      not
+    </p>
+    <p style="margin-top:0;">
+      specified beyond the fact that adding an element has constant amortized
+    </p>
+    <p style="margin-top:0;">
+      time cost.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;An application can increase the capacity of an &lt;tt&gt;ArrayList&lt;/tt&gt; 
+      instance
+    </p>
+    <p style="margin-top:0;">
+      before adding a large number of elements using the 
+      &lt;tt&gt;ensureCapacity&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      operation. &nbsp;This may reduce the amount of incremental reallocation.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;&lt;strong&gt;Note that this implementation is not synchronized.&lt;/strong&gt;
+    </p>
+    <p style="margin-top:0;">
+      If multiple threads access an &lt;tt&gt;ArrayList&lt;/tt&gt; instance concurrently,
+    </p>
+    <p style="margin-top:0;">
+      and at least one of the threads modifies the list structurally, it
+    </p>
+    <p style="margin-top:0;">
+      &lt;i&gt;must&lt;/i&gt; be synchronized externally. &nbsp;(A structural modification is
+    </p>
+    <p style="margin-top:0;">
+      any operation that adds or deletes one or more elements, or explicitly
+    </p>
+    <p style="margin-top:0;">
+      resizes the backing array; merely setting the value of an element is not
+    </p>
+    <p style="margin-top:0;">
+      a structural modification.) &nbsp;This is typically accomplished by
+    </p>
+    <p style="margin-top:0;">
+      synchronizing on some object that naturally encapsulates the list.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      If no such object exists, the list should be &quot;wrapped&quot; using the
+    </p>
+    <p style="margin-top:0;">
+      {@link Collections#synchronizedList Collections.synchronizedList}
+    </p>
+    <p style="margin-top:0;">
+      method. &nbsp;This is best done at creation time, to prevent accidental
+    </p>
+    <p style="margin-top:0;">
+      unsynchronized access to the list:&lt;pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      List list = Collections.synchronizedList(new ArrayList(...));&lt;/pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;&lt;a name=&quot;fail-fast&quot;&gt;
+    </p>
+    <p style="margin-top:0;">
+      The iterators returned by this class's {@link #iterator() iterator} and
+    </p>
+    <p style="margin-top:0;">
+      {@link #listIterator(int) listIterator} methods are 
+      &lt;em&gt;fail-fast&lt;/em&gt;:&lt;/a&gt;
+    </p>
+    <p style="margin-top:0;">
+      if the list is structurally modified at any time after the iterator is
+    </p>
+    <p style="margin-top:0;">
+      created, in any way except through the iterator's own
+    </p>
+    <p style="margin-top:0;">
+      {@link ListIterator#remove() remove} or
+    </p>
+    <p style="margin-top:0;">
+      {@link ListIterator#add(Object) add} methods, the iterator will throw a
+    </p>
+    <p style="margin-top:0;">
+      {@link ConcurrentModificationException}. &nbsp;Thus, in the face of
+    </p>
+    <p style="margin-top:0;">
+      concurrent modification, the iterator fails quickly and cleanly, rather
+    </p>
+    <p style="margin-top:0;">
+      than risking arbitrary, non-deterministic behavior at an undetermined
+    </p>
+    <p style="margin-top:0;">
+      time in the future.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Note that the fail-fast behavior of an iterator cannot be guaranteed
+    </p>
+    <p style="margin-top:0;">
+      as it is, generally speaking, impossible to make any hard guarantees in 
+      the
+    </p>
+    <p style="margin-top:0;">
+      presence of unsynchronized concurrent modification. &nbsp;Fail-fast iterators
+    </p>
+    <p style="margin-top:0;">
+      throw {@code ConcurrentModificationException} on a best-effort basis.
+    </p>
+    <p style="margin-top:0;">
+      Therefore, it would be wrong to write a program that depended on this
+    </p>
+    <p style="margin-top:0;">
+      exception for its correctness: &nbsp;&lt;i&gt;the fail-fast behavior of iterators
+    </p>
+    <p style="margin-top:0;">
+      should be used only to detect bugs.&lt;/i&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;This class is a member of the
+    </p>
+    <p style="margin-top:0;">
+      &lt;a href=&quot;{@docRoot}/../technotes/guides/collections/index.html&quot;&gt;
+    </p>
+    <p style="margin-top:0;">
+      Java Collections Framework&lt;/a&gt;.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Josh Bloch
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Neal Gafter
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;Collection
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;List
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;LinkedList
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;Vector
+    </p>
+    <p style="margin-top:0;">
+      @since &nbsp;&nbsp;1.2
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_Vt9hQWaGAqBkihF0.html" class="ItemLink">Itr : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      An optimized version of AbstractList.Itr
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_Dt9hQWaGAqBkihGP.html" class="ItemLink">ListItr : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      An optimized version of AbstractList.ListItr
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_rt9hQWaGAqBkihGn.html" class="ItemLink">SubList : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"></span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_wd9hQWaGAqBkihH9.html" class="ItemLink">ArrayListSpliterator : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Index-based split-by-two, lazily initialized Spliterator
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_Vy1hQWaGAqBkig9h.html" class="ItemLink">AbstractList : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      This class provides a skeletal implementation of the {@link List}
+    </p>
+    <p style="margin-top:0;">
+      interface to minimize the effort required to implement this interface
+    </p>
+    <p style="margin-top:0;">
+      backed by a &quot;random access&quot; data store (such as an array). &nbsp;For 
+      sequential
+    </p>
+    <p style="margin-top:0;">
+      access data (such as a linked list), {@link AbstractSequentialList} 
+      should
+    </p>
+    <p style="margin-top:0;">
+      be used in preference to this class.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;To implement an unmodifiable list, the programmer needs only to extend
+    </p>
+    <p style="margin-top:0;">
+      this class and provide implementations for the {@link #get(int)} and
+    </p>
+    <p style="margin-top:0;">
+      {@link List#size() size()} methods.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;To implement a modifiable list, the programmer must additionally
+    </p>
+    <p style="margin-top:0;">
+      override the {@link #set(int, Object) set(int, E)} method (which 
+      otherwise
+    </p>
+    <p style="margin-top:0;">
+      throws an {@code UnsupportedOperationException}). &nbsp;If the list is
+    </p>
+    <p style="margin-top:0;">
+      variable-size the programmer must additionally override the
+    </p>
+    <p style="margin-top:0;">
+      {@link #add(int, Object) add(int, E)} and {@link #remove(int)} methods.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The programmer should generally provide a void (no argument) and 
+      collection
+    </p>
+    <p style="margin-top:0;">
+      constructor, as per the recommendation in the {@link Collection} 
+      interface
+    </p>
+    <p style="margin-top:0;">
+      specification.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Unlike the other abstract collection implementations, the programmer 
+      does
+    </p>
+    <p style="margin-top:0;">
+      &lt;i&gt;not&lt;/i&gt; have to provide an iterator implementation; the iterator and
+    </p>
+    <p style="margin-top:0;">
+      list iterator are implemented by this class, on top of the &quot;random 
+      access&quot;
+    </p>
+    <p style="margin-top:0;">
+      methods:
+    </p>
+    <p style="margin-top:0;">
+      {@link #get(int)},
+    </p>
+    <p style="margin-top:0;">
+      {@link #set(int, Object) set(int, E)},
+    </p>
+    <p style="margin-top:0;">
+      {@link #add(int, Object) add(int, E)} and
+    </p>
+    <p style="margin-top:0;">
+      {@link #remove(int)}.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The documentation for each non-abstract method in this class 
+      describes its
+    </p>
+    <p style="margin-top:0;">
+      implementation in detail. &nbsp;Each of these methods may be overridden if the
+    </p>
+    <p style="margin-top:0;">
+      collection being implemented admits a more efficient implementation.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;This class is a member of the
+    </p>
+    <p style="margin-top:0;">
+      &lt;a href=&quot;{@docRoot}/../technotes/guides/collections/index.html&quot;&gt;
+    </p>
+    <p style="margin-top:0;">
+      Java Collections Framework&lt;/a&gt;.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Josh Bloch
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Neal Gafter
+    </p>
+    <p style="margin-top:0;">
+      @since 1.2
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_MK1hQWaGAqBkig_Y.html" class="ItemLink">SubList : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_OK1hQWaGAqBkihAp.html" class="ItemLink">RandomAccessSubList : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"></span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_gK1hQWaGAqBkig_y.html" class="ItemLink">Itr : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_4K1hQWaGAqBkig_C.html" class="ItemLink">ListItr : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"></span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_JUShQWaGAqBkig7u.html" class="ItemLink">AbstractCollection : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      This class provides a skeletal implementation of the &lt;tt&gt;Collection&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      interface, to minimize the effort required to implement this interface. 
+      &lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      To implement an unmodifiable collection, the programmer needs only to
+    </p>
+    <p style="margin-top:0;">
+      extend this class and provide implementations for the &lt;tt&gt;iterator&lt;/tt&gt; 
+      and
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;size&lt;/tt&gt; methods. &nbsp;(The iterator returned by the &lt;tt&gt;iterator&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      method must implement &lt;tt&gt;hasNext&lt;/tt&gt; and &lt;tt&gt;next&lt;/tt&gt;.)&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      To implement a modifiable collection, the programmer must additionally
+    </p>
+    <p style="margin-top:0;">
+      override this class's &lt;tt&gt;add&lt;/tt&gt; method (which otherwise throws an
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;UnsupportedOperationException&lt;/tt&gt;), and the iterator returned by the
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;iterator&lt;/tt&gt; method must additionally implement its &lt;tt&gt;remove&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      method.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      The programmer should generally provide a void (no argument) and
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Collection&lt;/tt&gt; constructor, as per the recommendation in the
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Collection&lt;/tt&gt; interface specification.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      The documentation for each non-abstract method in this class describes 
+      its
+    </p>
+    <p style="margin-top:0;">
+      implementation in detail. &nbsp;Each of these methods may be overridden if
+    </p>
+    <p style="margin-top:0;">
+      the collection being implemented admits a more efficient 
+      implementation.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      This class is a member of the
+    </p>
+    <p style="margin-top:0;">
+      &lt;a href=&quot;{@docRoot}/../technotes/guides/collections/index.html&quot;&gt;
+    </p>
+    <p style="margin-top:0;">
+      Java Collections Framework&lt;/a&gt;.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Josh Bloch
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Neal Gafter
+    </p>
+    <p style="margin-top:0;">
+      @see Collection
+    </p>
+    <p style="margin-top:0;">
+      @since 1.2
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_WlfBQWaGAqBkig4_.html" class="ItemLink">Collection : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      The root interface in the &lt;i&gt;collection hierarchy&lt;/i&gt;. &nbsp;A collection
+    </p>
+    <p style="margin-top:0;">
+      represents a group of objects, known as its &lt;i&gt;elements&lt;/i&gt;. &nbsp;Some
+    </p>
+    <p style="margin-top:0;">
+      collections allow duplicate elements and others do not. &nbsp;Some are ordered
+    </p>
+    <p style="margin-top:0;">
+      and others unordered. &nbsp;The JDK does not provide any &lt;i&gt;direct&lt;/i&gt;
+    </p>
+    <p style="margin-top:0;">
+      implementations of this interface: it provides implementations of more
+    </p>
+    <p style="margin-top:0;">
+      specific subinterfaces like &lt;tt&gt;Set&lt;/tt&gt; and &lt;tt&gt;List&lt;/tt&gt;. &nbsp;This 
+      interface
+    </p>
+    <p style="margin-top:0;">
+      is typically used to pass collections around and manipulate them where
+    </p>
+    <p style="margin-top:0;">
+      maximum generality is desired.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;&lt;i&gt;Bags&lt;/i&gt; or &lt;i&gt;multisets&lt;/i&gt; (unordered collections that may 
+      contain
+    </p>
+    <p style="margin-top:0;">
+      duplicate elements) should implement this interface directly.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;All general-purpose &lt;tt&gt;Collection&lt;/tt&gt; implementation classes (which
+    </p>
+    <p style="margin-top:0;">
+      typically implement &lt;tt&gt;Collection&lt;/tt&gt; indirectly through one of its
+    </p>
+    <p style="margin-top:0;">
+      subinterfaces) should provide two &quot;standard&quot; constructors: a void (no
+    </p>
+    <p style="margin-top:0;">
+      arguments) constructor, which creates an empty collection, and a
+    </p>
+    <p style="margin-top:0;">
+      constructor with a single argument of type &lt;tt&gt;Collection&lt;/tt&gt;, which
+    </p>
+    <p style="margin-top:0;">
+      creates a new collection with the same elements as its argument. &nbsp;In
+    </p>
+    <p style="margin-top:0;">
+      effect, the latter constructor allows the user to copy any collection,
+    </p>
+    <p style="margin-top:0;">
+      producing an equivalent collection of the desired implementation type.
+    </p>
+    <p style="margin-top:0;">
+      There is no way to enforce this convention (as interfaces cannot contain
+    </p>
+    <p style="margin-top:0;">
+      constructors) but all of the general-purpose &lt;tt&gt;Collection&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      implementations in the Java platform libraries comply.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The &quot;destructive&quot; methods contained in this interface, that is, the
+    </p>
+    <p style="margin-top:0;">
+      methods that modify the collection on which they operate, are specified 
+      to
+    </p>
+    <p style="margin-top:0;">
+      throw &lt;tt&gt;UnsupportedOperationException&lt;/tt&gt; if this collection does not
+    </p>
+    <p style="margin-top:0;">
+      support the operation. &nbsp;If this is the case, these methods may, but are 
+      not
+    </p>
+    <p style="margin-top:0;">
+      required to, throw an &lt;tt&gt;UnsupportedOperationException&lt;/tt&gt; if the
+    </p>
+    <p style="margin-top:0;">
+      invocation would have no effect on the collection. &nbsp;For example, invoking
+    </p>
+    <p style="margin-top:0;">
+      the {@link #addAll(Collection)} method on an unmodifiable collection may,
+    </p>
+    <p style="margin-top:0;">
+      but is not required to, throw the exception if the collection to be added
+    </p>
+    <p style="margin-top:0;">
+      is empty.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;&lt;a name=&quot;optional-restrictions&quot;&gt;
+    </p>
+    <p style="margin-top:0;">
+      Some collection implementations have restrictions on the elements that
+    </p>
+    <p style="margin-top:0;">
+      they may contain.&lt;/a&gt; &nbsp;For example, some implementations prohibit null 
+      elements,
+    </p>
+    <p style="margin-top:0;">
+      and some have restrictions on the types of their elements. &nbsp;Attempting to
+    </p>
+    <p style="margin-top:0;">
+      add an ineligible element throws an unchecked exception, typically
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;NullPointerException&lt;/tt&gt; or &lt;tt&gt;ClassCastException&lt;/tt&gt;. &nbsp;Attempting
+    </p>
+    <p style="margin-top:0;">
+      to query the presence of an ineligible element may throw an exception,
+    </p>
+    <p style="margin-top:0;">
+      or it may simply return false; some implementations will exhibit the 
+      former
+    </p>
+    <p style="margin-top:0;">
+      behavior and some will exhibit the latter. &nbsp;More generally, attempting an
+    </p>
+    <p style="margin-top:0;">
+      operation on an ineligible element whose completion would not result in
+    </p>
+    <p style="margin-top:0;">
+      the insertion of an ineligible element into the collection may throw an
+    </p>
+    <p style="margin-top:0;">
+      exception or it may succeed, at the option of the implementation.
+    </p>
+    <p style="margin-top:0;">
+      Such exceptions are marked as &quot;optional&quot; in the specification for this
+    </p>
+    <p style="margin-top:0;">
+      interface.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;It is up to each collection to determine its own synchronization
+    </p>
+    <p style="margin-top:0;">
+      policy. &nbsp;In the absence of a stronger guarantee by the
+    </p>
+    <p style="margin-top:0;">
+      implementation, undefined behavior may result from the invocation
+    </p>
+    <p style="margin-top:0;">
+      of any method on a collection that is being mutated by another
+    </p>
+    <p style="margin-top:0;">
+      thread; this includes direct invocations, passing the collection to
+    </p>
+    <p style="margin-top:0;">
+      a method that might perform invocations, and using an existing
+    </p>
+    <p style="margin-top:0;">
+      iterator to examine the collection.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Many methods in Collections Framework interfaces are defined in
+    </p>
+    <p style="margin-top:0;">
+      terms of the {@link Object#equals(Object) equals} method. &nbsp;For example,
+    </p>
+    <p style="margin-top:0;">
+      the specification for the {@link #contains(Object) contains(Object o)}
+    </p>
+    <p style="margin-top:0;">
+      method says: &quot;returns &lt;tt&gt;true&lt;/tt&gt; if and only if this collection
+    </p>
+    <p style="margin-top:0;">
+      contains at least one element &lt;tt&gt;e&lt;/tt&gt; such that
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;(o==null ? e==null : o.equals(e))&lt;/tt&gt;.&quot; &nbsp;This specification should
+    </p>
+    <p style="margin-top:0;">
+      &lt;i&gt;not&lt;/i&gt; be construed to imply that invoking 
+      &lt;tt&gt;Collection.contains&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      with a non-null argument &lt;tt&gt;o&lt;/tt&gt; will cause &lt;tt&gt;o.equals(e)&lt;/tt&gt; to be
+    </p>
+    <p style="margin-top:0;">
+      invoked for any element &lt;tt&gt;e&lt;/tt&gt;. &nbsp;Implementations are free to 
+      implement
+    </p>
+    <p style="margin-top:0;">
+      optimizations whereby the &lt;tt&gt;equals&lt;/tt&gt; invocation is avoided, for
+    </p>
+    <p style="margin-top:0;">
+      example, by first comparing the hash codes of the two elements. &nbsp;(The
+    </p>
+    <p style="margin-top:0;">
+      {@link Object#hashCode()} specification guarantees that two objects with
+    </p>
+    <p style="margin-top:0;">
+      unequal hash codes cannot be equal.) &nbsp;More generally, implementations of
+    </p>
+    <p style="margin-top:0;">
+      the various Collections Framework interfaces are free to take advantage 
+      of
+    </p>
+    <p style="margin-top:0;">
+      the specified behavior of underlying {@link Object} methods wherever the
+    </p>
+    <p style="margin-top:0;">
+      implementor deems it appropriate.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Some collection operations which perform recursive traversal of the
+    </p>
+    <p style="margin-top:0;">
+      collection may fail with an exception for self-referential instances 
+      where
+    </p>
+    <p style="margin-top:0;">
+      the collection directly or indirectly contains itself. This includes the
+    </p>
+    <p style="margin-top:0;">
+      {@code clone()}, {@code equals()}, {@code hashCode()} and {@code 
+      toString()}
+    </p>
+    <p style="margin-top:0;">
+      methods. Implementations may optionally handle the self-referential 
+      scenario,
+    </p>
+    <p style="margin-top:0;">
+      however most current implementations do not do so.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;This interface is a member of the
+    </p>
+    <p style="margin-top:0;">
+      &lt;a href=&quot;{@docRoot}/../technotes/guides/collections/index.html&quot;&gt;
+    </p>
+    <p style="margin-top:0;">
+      Java Collections Framework&lt;/a&gt;.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @implSpec
+    </p>
+    <p style="margin-top:0;">
+      The default method implementations (inherited or otherwise) do not apply 
+      any
+    </p>
+    <p style="margin-top:0;">
+      synchronization protocol. &nbsp;If a {@code Collection} implementation has a
+    </p>
+    <p style="margin-top:0;">
+      specific synchronization protocol, then it must override default
+    </p>
+    <p style="margin-top:0;">
+      implementations to apply that protocol.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @param &lt;E&gt; the type of elements in this collection
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Josh Bloch
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Neal Gafter
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;Set
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;List
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;Map
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;SortedSet
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;SortedMap
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;HashSet
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;TreeSet
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;ArrayList
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;LinkedList
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;Vector
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;Collections
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;Arrays
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;AbstractCollection
+    </p>
+    <p style="margin-top:0;">
+      @since 1.2
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Package.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Package.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Package_GlfBQWaGAqBkig49.html" class="ItemLink">util : Package</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Class_y1dBQWaGAqBkig4M.html" class="ItemLink">Iterable : Class</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Implementing this interface allows an object to be the target of
+    </p>
+    <p style="margin-top:0;">
+      the &quot;for-each loop&quot; statement. See
+    </p>
+    <p style="margin-top:0;">
+      &lt;strong&gt;
+    </p>
+    <p style="margin-top:0;">
+      &lt;a href=&quot;{@docRoot}/../technotes/guides/language/foreach.html&quot;&gt;For-each 
+      Loop&lt;/a&gt;
+    </p>
+    <p style="margin-top:0;">
+      &lt;/strong&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @param &lt;T&gt; the type of elements returned by the iterator
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @since 1.5
+    </p>
+    <p style="margin-top:0;">
+      @jls 14.14.2 The enhanced for statement
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Package.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Package.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Package_A1dBQWaGAqBkig4L.html" class="ItemLink">lang : Package</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Package.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Package.png'); background-repeat: no-repeat;">
+					</div>
+					&nbsp; <a href="Package_fVdBQWaGAqBkig4K.html" class="ItemLink">java : Package</a>				</span>
+			</td>
+			<td>
+			</td>
+			<td style="padding: 5px 0">
+<span class="TableContent Documentation"></span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<div style="height: 20px">
+	</div>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="FooterLine">
+			</td>
+		</tr>
+	</table>
+	<div class="HeaderText">
+		Diagramas Java	</div>
+</body>
+</html>

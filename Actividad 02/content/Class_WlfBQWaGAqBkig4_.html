@@ -1,0 +1,8227 @@
+<html>
+<head>
+	<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="report.css" type="text/css"/>
+	<title></title>
+	<script type="text/javascript" src="report.js"></script>
+	<script type="text/javascript" src="link_popup.js"></script>
+	<script type="text/javascript" src="tooltip.js"></script>
+</head>
+<body style="margin-left: 10px; margin-right: 10px; margin-top: 10px; margin-bottom: 10px;">
+	<div style="position:absolute; z-index:21; visibility:hidden" id="vplink">
+		<table border="1" cellpadding="0" cellspacing="0" bordercolor="#A9BFD3">
+			<tr>
+				<td>
+					<table border="0" cellpadding="0" width="100%" cellspacing="0">
+						<tr style="background:#DDDDDD">
+							<td style="font-size: 12px;" align="left">
+								<select onchange="vpLinkToggleName()" id="vplink-linkType">
+	<option value="Project Link">Project Link</option>
+	<option value="Page URL">Page URL</option>
+</select>
+							</td>
+							<td style="font-size: 12px;" align="right">
+								<input onclick="javascript: vpLinkToggleName()" id="vplink-checkbox" type="checkbox" />
+								<label for="vplink-checkbox">with Name</label>							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<textarea id="vplink-text" style="width: 348px; height: 60px; border-color: #7EADD9; outline: none;"></textarea>				</td>
+			</tr>
+		</table>
+	</div>
+	<div class="HeaderText">
+		<span>
+Diagramas Java		</span>
+	</div>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="HeaderLine1">
+			</td>
+		</tr>
+		<tr>
+			<td class="HeaderLine2">
+			</td>
+		</tr>
+		<tr>
+			<td class="HeaderLine3">
+			</td>
+		</tr>
+	</table>
+	<p>
+<a href="Package_fVdBQWaGAqBkig4K.html" class="PageParentTitle">java : Package</a><span class="PageParentTitle">&nbsp;.&nbsp;</span><a href="Package_GlfBQWaGAqBkig49.html" class="PageParentTitle">util : Package</a>	</p>
+	<p class="PageTitle">
+Class - Collection<a onclick="javascript: showVpLink('Diagramas Java.vpp://modelelement/WlfBQWaGAqBkig4.', 'Collection\nDiagramas Java.vpp://modelelement/WlfBQWaGAqBkig4.', 'Collection', this); return false;" style="padding-left: 16px; font-size: 12px" href="#"><img src="../images/icons/link.png" border="0"> link</a>	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Properties			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      The root interface in the &lt;i&gt;collection hierarchy&lt;/i&gt;. &nbsp;A collection
+    </p>
+    <p style="margin-top:0;">
+      represents a group of objects, known as its &lt;i&gt;elements&lt;/i&gt;. &nbsp;Some
+    </p>
+    <p style="margin-top:0;">
+      collections allow duplicate elements and others do not. &nbsp;Some are ordered
+    </p>
+    <p style="margin-top:0;">
+      and others unordered. &nbsp;The JDK does not provide any &lt;i&gt;direct&lt;/i&gt;
+    </p>
+    <p style="margin-top:0;">
+      implementations of this interface: it provides implementations of more
+    </p>
+    <p style="margin-top:0;">
+      specific subinterfaces like &lt;tt&gt;Set&lt;/tt&gt; and &lt;tt&gt;List&lt;/tt&gt;. &nbsp;This 
+      interface
+    </p>
+    <p style="margin-top:0;">
+      is typically used to pass collections around and manipulate them where
+    </p>
+    <p style="margin-top:0;">
+      maximum generality is desired.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;&lt;i&gt;Bags&lt;/i&gt; or &lt;i&gt;multisets&lt;/i&gt; (unordered collections that may 
+      contain
+    </p>
+    <p style="margin-top:0;">
+      duplicate elements) should implement this interface directly.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;All general-purpose &lt;tt&gt;Collection&lt;/tt&gt; implementation classes (which
+    </p>
+    <p style="margin-top:0;">
+      typically implement &lt;tt&gt;Collection&lt;/tt&gt; indirectly through one of its
+    </p>
+    <p style="margin-top:0;">
+      subinterfaces) should provide two &quot;standard&quot; constructors: a void (no
+    </p>
+    <p style="margin-top:0;">
+      arguments) constructor, which creates an empty collection, and a
+    </p>
+    <p style="margin-top:0;">
+      constructor with a single argument of type &lt;tt&gt;Collection&lt;/tt&gt;, which
+    </p>
+    <p style="margin-top:0;">
+      creates a new collection with the same elements as its argument. &nbsp;In
+    </p>
+    <p style="margin-top:0;">
+      effect, the latter constructor allows the user to copy any collection,
+    </p>
+    <p style="margin-top:0;">
+      producing an equivalent collection of the desired implementation type.
+    </p>
+    <p style="margin-top:0;">
+      There is no way to enforce this convention (as interfaces cannot contain
+    </p>
+    <p style="margin-top:0;">
+      constructors) but all of the general-purpose &lt;tt&gt;Collection&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      implementations in the Java platform libraries comply.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The &quot;destructive&quot; methods contained in this interface, that is, the
+    </p>
+    <p style="margin-top:0;">
+      methods that modify the collection on which they operate, are specified 
+      to
+    </p>
+    <p style="margin-top:0;">
+      throw &lt;tt&gt;UnsupportedOperationException&lt;/tt&gt; if this collection does not
+    </p>
+    <p style="margin-top:0;">
+      support the operation. &nbsp;If this is the case, these methods may, but are 
+      not
+    </p>
+    <p style="margin-top:0;">
+      required to, throw an &lt;tt&gt;UnsupportedOperationException&lt;/tt&gt; if the
+    </p>
+    <p style="margin-top:0;">
+      invocation would have no effect on the collection. &nbsp;For example, invoking
+    </p>
+    <p style="margin-top:0;">
+      the {@link #addAll(Collection)} method on an unmodifiable collection may,
+    </p>
+    <p style="margin-top:0;">
+      but is not required to, throw the exception if the collection to be added
+    </p>
+    <p style="margin-top:0;">
+      is empty.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;&lt;a name=&quot;optional-restrictions&quot;&gt;
+    </p>
+    <p style="margin-top:0;">
+      Some collection implementations have restrictions on the elements that
+    </p>
+    <p style="margin-top:0;">
+      they may contain.&lt;/a&gt; &nbsp;For example, some implementations prohibit null 
+      elements,
+    </p>
+    <p style="margin-top:0;">
+      and some have restrictions on the types of their elements. &nbsp;Attempting to
+    </p>
+    <p style="margin-top:0;">
+      add an ineligible element throws an unchecked exception, typically
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;NullPointerException&lt;/tt&gt; or &lt;tt&gt;ClassCastException&lt;/tt&gt;. &nbsp;Attempting
+    </p>
+    <p style="margin-top:0;">
+      to query the presence of an ineligible element may throw an exception,
+    </p>
+    <p style="margin-top:0;">
+      or it may simply return false; some implementations will exhibit the 
+      former
+    </p>
+    <p style="margin-top:0;">
+      behavior and some will exhibit the latter. &nbsp;More generally, attempting an
+    </p>
+    <p style="margin-top:0;">
+      operation on an ineligible element whose completion would not result in
+    </p>
+    <p style="margin-top:0;">
+      the insertion of an ineligible element into the collection may throw an
+    </p>
+    <p style="margin-top:0;">
+      exception or it may succeed, at the option of the implementation.
+    </p>
+    <p style="margin-top:0;">
+      Such exceptions are marked as &quot;optional&quot; in the specification for this
+    </p>
+    <p style="margin-top:0;">
+      interface.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;It is up to each collection to determine its own synchronization
+    </p>
+    <p style="margin-top:0;">
+      policy. &nbsp;In the absence of a stronger guarantee by the
+    </p>
+    <p style="margin-top:0;">
+      implementation, undefined behavior may result from the invocation
+    </p>
+    <p style="margin-top:0;">
+      of any method on a collection that is being mutated by another
+    </p>
+    <p style="margin-top:0;">
+      thread; this includes direct invocations, passing the collection to
+    </p>
+    <p style="margin-top:0;">
+      a method that might perform invocations, and using an existing
+    </p>
+    <p style="margin-top:0;">
+      iterator to examine the collection.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Many methods in Collections Framework interfaces are defined in
+    </p>
+    <p style="margin-top:0;">
+      terms of the {@link Object#equals(Object) equals} method. &nbsp;For example,
+    </p>
+    <p style="margin-top:0;">
+      the specification for the {@link #contains(Object) contains(Object o)}
+    </p>
+    <p style="margin-top:0;">
+      method says: &quot;returns &lt;tt&gt;true&lt;/tt&gt; if and only if this collection
+    </p>
+    <p style="margin-top:0;">
+      contains at least one element &lt;tt&gt;e&lt;/tt&gt; such that
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;(o==null ? e==null : o.equals(e))&lt;/tt&gt;.&quot; &nbsp;This specification should
+    </p>
+    <p style="margin-top:0;">
+      &lt;i&gt;not&lt;/i&gt; be construed to imply that invoking 
+      &lt;tt&gt;Collection.contains&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      with a non-null argument &lt;tt&gt;o&lt;/tt&gt; will cause &lt;tt&gt;o.equals(e)&lt;/tt&gt; to be
+    </p>
+    <p style="margin-top:0;">
+      invoked for any element &lt;tt&gt;e&lt;/tt&gt;. &nbsp;Implementations are free to 
+      implement
+    </p>
+    <p style="margin-top:0;">
+      optimizations whereby the &lt;tt&gt;equals&lt;/tt&gt; invocation is avoided, for
+    </p>
+    <p style="margin-top:0;">
+      example, by first comparing the hash codes of the two elements. &nbsp;(The
+    </p>
+    <p style="margin-top:0;">
+      {@link Object#hashCode()} specification guarantees that two objects with
+    </p>
+    <p style="margin-top:0;">
+      unequal hash codes cannot be equal.) &nbsp;More generally, implementations of
+    </p>
+    <p style="margin-top:0;">
+      the various Collections Framework interfaces are free to take advantage 
+      of
+    </p>
+    <p style="margin-top:0;">
+      the specified behavior of underlying {@link Object} methods wherever the
+    </p>
+    <p style="margin-top:0;">
+      implementor deems it appropriate.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Some collection operations which perform recursive traversal of the
+    </p>
+    <p style="margin-top:0;">
+      collection may fail with an exception for self-referential instances 
+      where
+    </p>
+    <p style="margin-top:0;">
+      the collection directly or indirectly contains itself. This includes the
+    </p>
+    <p style="margin-top:0;">
+      {@code clone()}, {@code equals()}, {@code hashCode()} and {@code 
+      toString()}
+    </p>
+    <p style="margin-top:0;">
+      methods. Implementations may optionally handle the self-referential 
+      scenario,
+    </p>
+    <p style="margin-top:0;">
+      however most current implementations do not do so.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;This interface is a member of the
+    </p>
+    <p style="margin-top:0;">
+      &lt;a href=&quot;{@docRoot}/../technotes/guides/collections/index.html&quot;&gt;
+    </p>
+    <p style="margin-top:0;">
+      Java Collections Framework&lt;/a&gt;.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @implSpec
+    </p>
+    <p style="margin-top:0;">
+      The default method implementations (inherited or otherwise) do not apply 
+      any
+    </p>
+    <p style="margin-top:0;">
+      synchronization protocol. &nbsp;If a {@code Collection} implementation has a
+    </p>
+    <p style="margin-top:0;">
+      specific synchronization protocol, then it must override default
+    </p>
+    <p style="margin-top:0;">
+      implementations to apply that protocol.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @param &lt;E&gt; the type of elements in this collection
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Josh Bloch
+    </p>
+    <p style="margin-top:0;">
+      @author &nbsp;Neal Gafter
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;Set
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;List
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;Map
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;SortedSet
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;SortedMap
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;HashSet
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;TreeSet
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;ArrayList
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;LinkedList
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;Vector
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;Collections
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;Arrays
+    </p>
+    <p style="margin-top:0;">
+      @see &nbsp;&nbsp;&nbsp;&nbsp;AbstractCollection
+    </p>
+    <p style="margin-top:0;">
+      @since 1.2
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Active</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Business Key Mutable</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Business Model</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Root</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Stereotypes</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+				<span class="TableContent">
+<a href="Stereotype_61dBQWaGAqBkig4N.html" class="ItemLink">Interface</a>				</span>
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Operations Summary			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="8" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="8" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="10%">
+<span class="TableHeaderText">Visibility</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td width="15%">
+<span class="TableHeaderText">Return Type</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Description</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="8" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_12J_QWaGAqBkigqF.html" class="ItemLink">int</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#elfBQWaGAqBkig5B" class="ItemLink">size</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns the number of elements in this collection. &nbsp;If this collection
+    </p>
+    <p style="margin-top:0;">
+      contains more than &lt;tt&gt;Integer.MAX_VALUE&lt;/tt&gt; elements, returns
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Integer.MAX_VALUE&lt;/tt&gt;.
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#elfBQWaGAqBkig5D" class="ItemLink">isEmpty</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns &lt;tt&gt;true&lt;/tt&gt; if this collection contains no elements.
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#.lfBQWaGAqBkig5F" class="ItemLink">contains</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns &lt;tt&gt;true&lt;/tt&gt; if this collection contains the specified element.
+    </p>
+    <p style="margin-top:0;">
+      More formally, returns &lt;tt&gt;true&lt;/tt&gt; if and only if this collection
+    </p>
+    <p style="margin-top:0;">
+      contains at least one element &lt;tt&gt;e&lt;/tt&gt; such that
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;(o==null&amp;nbsp;?&amp;nbsp;e==null&amp;nbsp;:&amp;nbsp;o.equals(e))&lt;/tt&gt;.
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+java.util.Iterator			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#hlfBQWaGAqBkig5J" class="ItemLink">iterator</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns an iterator over the elements in this collection. &nbsp;There are no
+    </p>
+    <p style="margin-top:0;">
+      guarantees concerning the order in which the elements are returned
+    </p>
+    <p style="margin-top:0;">
+      (unless this collection is an instance of some class that provides a
+    </p>
+    <p style="margin-top:0;">
+      guarantee).
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+java.lang.Object			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#hlfBQWaGAqBkig5L" class="ItemLink">toArray</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns an array containing all of the elements in this collection.
+    </p>
+    <p style="margin-top:0;">
+      If this collection makes any guarantees as to what order its elements
+    </p>
+    <p style="margin-top:0;">
+      are returned by its iterator, this method must return the elements in
+    </p>
+    <p style="margin-top:0;">
+      the same order.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The returned array will be &quot;safe&quot; in that no references to it are
+    </p>
+    <p style="margin-top:0;">
+      maintained by this collection. &nbsp;(In other words, this method must
+    </p>
+    <p style="margin-top:0;">
+      allocate a new array even if this collection is backed by an array).
+    </p>
+    <p style="margin-top:0;">
+      The caller is thus free to modify the returned array.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;This method acts as bridge between array-based and collection-based
+    </p>
+    <p style="margin-top:0;">
+      APIs.
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+T			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#RlfBQWaGAqBkig5N" class="ItemLink">toArray</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns an array containing all of the elements in this collection;
+    </p>
+    <p style="margin-top:0;">
+      the runtime type of the returned array is that of the specified array.
+    </p>
+    <p style="margin-top:0;">
+      If the collection fits in the specified array, it is returned therein.
+    </p>
+    <p style="margin-top:0;">
+      Otherwise, a new array is allocated with the runtime type of the
+    </p>
+    <p style="margin-top:0;">
+      specified array and the size of this collection.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;If this collection fits in the specified array with room to spare
+    </p>
+    <p style="margin-top:0;">
+      (i.e., the array has more elements than this collection), the element
+    </p>
+    <p style="margin-top:0;">
+      in the array immediately following the end of the collection is set to
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;null&lt;/tt&gt;. &nbsp;(This is useful in determining the length of this
+    </p>
+    <p style="margin-top:0;">
+      collection &lt;i&gt;only&lt;/i&gt; if the caller knows that this collection does
+    </p>
+    <p style="margin-top:0;">
+      not contain any &lt;tt&gt;null&lt;/tt&gt; elements.)
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;If this collection makes any guarantees as to what order its elements
+    </p>
+    <p style="margin-top:0;">
+      are returned by its iterator, this method must return the elements in
+    </p>
+    <p style="margin-top:0;">
+      the same order.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Like the {@link #toArray()} method, this method acts as bridge between
+    </p>
+    <p style="margin-top:0;">
+      array-based and collection-based APIs. &nbsp;Further, this method allows
+    </p>
+    <p style="margin-top:0;">
+      precise control over the runtime type of the output array, and may,
+    </p>
+    <p style="margin-top:0;">
+      under certain circumstances, be used to save allocation costs.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Suppose &lt;tt&gt;x&lt;/tt&gt; is a collection known to contain only strings.
+    </p>
+    <p style="margin-top:0;">
+      The following code can be used to dump the collection into a newly
+    </p>
+    <p style="margin-top:0;">
+      allocated array of &lt;tt&gt;String&lt;/tt&gt;:
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      String[] y = x.toArray(new String[0]);&lt;/pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      Note that &lt;tt&gt;toArray(new Object[0])&lt;/tt&gt; is identical in function to
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;toArray()&lt;/tt&gt;.
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#JlfBQWaGAqBkig5S" class="ItemLink">add</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Ensures that this collection contains the specified element (optional
+    </p>
+    <p style="margin-top:0;">
+      operation). &nbsp;Returns &lt;tt&gt;true&lt;/tt&gt; if this collection changed as a
+    </p>
+    <p style="margin-top:0;">
+      result of the call. &nbsp;(Returns &lt;tt&gt;false&lt;/tt&gt; if this collection does
+    </p>
+    <p style="margin-top:0;">
+      not permit duplicates and already contains the specified element.)&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      Collections that support this operation may place limitations on what
+    </p>
+    <p style="margin-top:0;">
+      elements may be added to this collection. &nbsp;In particular, some
+    </p>
+    <p style="margin-top:0;">
+      collections will refuse to add &lt;tt&gt;null&lt;/tt&gt; elements, and others will
+    </p>
+    <p style="margin-top:0;">
+      impose restrictions on the type of elements that may be added.
+    </p>
+    <p style="margin-top:0;">
+      Collection classes should clearly specify in their documentation any
+    </p>
+    <p style="margin-top:0;">
+      restrictions on what elements may be added.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      If a collection refuses to add a particular element for any reason
+    </p>
+    <p style="margin-top:0;">
+      other than that it already contains the element, it &lt;i&gt;must&lt;/i&gt; throw
+    </p>
+    <p style="margin-top:0;">
+      an exception (rather than returning &lt;tt&gt;false&lt;/tt&gt;). &nbsp;This preserves
+    </p>
+    <p style="margin-top:0;">
+      the invariant that a collection always contains the specified element
+    </p>
+    <p style="margin-top:0;">
+      after this call returns.
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#plfBQWaGAqBkig5W" class="ItemLink">remove</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Removes a single instance of the specified element from this
+    </p>
+    <p style="margin-top:0;">
+      collection, if it is present (optional operation). &nbsp;More formally,
+    </p>
+    <p style="margin-top:0;">
+      removes an element &lt;tt&gt;e&lt;/tt&gt; such that
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;(o==null&amp;nbsp;?&amp;nbsp;e==null&amp;nbsp;:&amp;nbsp;o.equals(e))&lt;/tt&gt;, if
+    </p>
+    <p style="margin-top:0;">
+      this collection contains one or more such elements. &nbsp;Returns
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;true&lt;/tt&gt; if this collection contained the specified element (or
+    </p>
+    <p style="margin-top:0;">
+      equivalently, if this collection changed as a result of the call).
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#5lfBQWaGAqBkig5a" class="ItemLink">containsAll</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns &lt;tt&gt;true&lt;/tt&gt; if this collection contains all of the elements
+    </p>
+    <p style="margin-top:0;">
+      in the specified collection.
+    </p>
+    <p style="margin-top:0;">
+      @see #contains(Object)
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#FlfBQWaGAqBkig5e" class="ItemLink">addAll</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Adds all of the elements in the specified collection to this collection
+    </p>
+    <p style="margin-top:0;">
+      (optional operation). &nbsp;The behavior of this operation is undefined if
+    </p>
+    <p style="margin-top:0;">
+      the specified collection is modified while the operation is in progress.
+    </p>
+    <p style="margin-top:0;">
+      (This implies that the behavior of this call is undefined if the
+    </p>
+    <p style="margin-top:0;">
+      specified collection is this collection, and this collection is
+    </p>
+    <p style="margin-top:0;">
+      nonempty.)
+    </p>
+    <p style="margin-top:0;">
+      @see #add(Object)
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#llfBQWaGAqBkig5i" class="ItemLink">removeAll</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Removes all of this collection's elements that are also contained in the
+    </p>
+    <p style="margin-top:0;">
+      specified collection (optional operation). &nbsp;After this call returns,
+    </p>
+    <p style="margin-top:0;">
+      this collection will contain no elements in common with the specified
+    </p>
+    <p style="margin-top:0;">
+      collection.
+    </p>
+    <p style="margin-top:0;">
+      @see #contains(Object)
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#1lfBQWaGAqBkig5m" class="ItemLink">removeIf</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Removes all of the elements of this collection that satisfy the given
+    </p>
+    <p style="margin-top:0;">
+      predicate. &nbsp;Errors or runtime exceptions thrown during iteration or by
+    </p>
+    <p style="margin-top:0;">
+      the predicate are relayed to the caller.
+    </p>
+    <p style="margin-top:0;">
+      @implSpec The default implementation traverses all elements of the 
+      collection using
+    </p>
+    <p style="margin-top:0;">
+      its {@link #iterator}. &nbsp;Each matching element is removed using
+    </p>
+    <p style="margin-top:0;">
+      {@link Iterator#remove()}. &nbsp;If the collection's iterator does not
+    </p>
+    <p style="margin-top:0;">
+      support removal then an {@code UnsupportedOperationException} will be
+    </p>
+    <p style="margin-top:0;">
+      thrown on the first matching element.
+    </p>
+    <p style="margin-top:0;">
+      @since 1.8
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#NlfBQWaGAqBkig5q" class="ItemLink">retainAll</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Retains only the elements in this collection that are contained in the
+    </p>
+    <p style="margin-top:0;">
+      specified collection (optional operation). &nbsp;In other words, removes from
+    </p>
+    <p style="margin-top:0;">
+      this collection all of its elements that are not contained in the
+    </p>
+    <p style="margin-top:0;">
+      specified collection.
+    </p>
+    <p style="margin-top:0;">
+      @see #contains(Object)
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_12J_QWaGAqBkigqI.html" class="ItemLink">void</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#dlfBQWaGAqBkig5u" class="ItemLink">clear</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Removes all of the elements from this collection (optional operation).
+    </p>
+    <p style="margin-top:0;">
+      The collection will be empty after this method returns.
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#dlfBQWaGAqBkig5w" class="ItemLink">equals</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Compares the specified object with this collection for equality. &lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      While the &lt;tt&gt;Collection&lt;/tt&gt; interface adds no stipulations to the
+    </p>
+    <p style="margin-top:0;">
+      general contract for the &lt;tt&gt;Object.equals&lt;/tt&gt;, programmers who
+    </p>
+    <p style="margin-top:0;">
+      implement the &lt;tt&gt;Collection&lt;/tt&gt; interface &quot;directly&quot; (in other words,
+    </p>
+    <p style="margin-top:0;">
+      create a class that is a &lt;tt&gt;Collection&lt;/tt&gt; but is not a &lt;tt&gt;Set&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      or a &lt;tt&gt;List&lt;/tt&gt;) must exercise care if they choose to override the
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Object.equals&lt;/tt&gt;. &nbsp;It is not necessary to do so, and the simplest
+    </p>
+    <p style="margin-top:0;">
+      course of action is to rely on &lt;tt&gt;Object&lt;/tt&gt;'s implementation, but
+    </p>
+    <p style="margin-top:0;">
+      the implementor may wish to implement a &quot;value comparison&quot; in place of
+    </p>
+    <p style="margin-top:0;">
+      the default &quot;reference comparison.&quot; &nbsp;(The &lt;tt&gt;List&lt;/tt&gt; and
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Set&lt;/tt&gt; interfaces mandate such value comparisons.)&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      The general contract for the &lt;tt&gt;Object.equals&lt;/tt&gt; method states that
+    </p>
+    <p style="margin-top:0;">
+      equals must be symmetric (in other words, &lt;tt&gt;a.equals(b)&lt;/tt&gt; if and
+    </p>
+    <p style="margin-top:0;">
+      only if &lt;tt&gt;b.equals(a)&lt;/tt&gt;). &nbsp;The contracts for &lt;tt&gt;List.equals&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      and &lt;tt&gt;Set.equals&lt;/tt&gt; state that lists are only equal to other lists,
+    </p>
+    <p style="margin-top:0;">
+      and sets to other sets. &nbsp;Thus, a custom &lt;tt&gt;equals&lt;/tt&gt; method for a
+    </p>
+    <p style="margin-top:0;">
+      collection class that implements neither the &lt;tt&gt;List&lt;/tt&gt; nor
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Set&lt;/tt&gt; interface must return &lt;tt&gt;false&lt;/tt&gt; when this collection
+    </p>
+    <p style="margin-top:0;">
+      is compared to any list or set. &nbsp;(By the same logic, it is not possible
+    </p>
+    <p style="margin-top:0;">
+      to write a class that correctly implements both the &lt;tt&gt;Set&lt;/tt&gt; and
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;List&lt;/tt&gt; interfaces.)
+    </p>
+    <p style="margin-top:0;">
+      @see List#equals(Object)
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<a href="DataType_12J_QWaGAqBkigqF.html" class="ItemLink">int</a>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#DlfBQWaGAqBkig50" class="ItemLink">hashCode</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns the hash code value for this collection. &nbsp;While the
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Collection&lt;/tt&gt; interface adds no stipulations to the general
+    </p>
+    <p style="margin-top:0;">
+      contract for the &lt;tt&gt;Object.hashCode&lt;/tt&gt; method, programmers should
+    </p>
+    <p style="margin-top:0;">
+      take note that any class that overrides the &lt;tt&gt;Object.equals&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      method must also override the &lt;tt&gt;Object.hashCode&lt;/tt&gt; method in order
+    </p>
+    <p style="margin-top:0;">
+      to satisfy the general contract for the &lt;tt&gt;Object.hashCode&lt;/tt&gt; method.
+    </p>
+    <p style="margin-top:0;">
+      In particular, &lt;tt&gt;c1.equals(c2)&lt;/tt&gt; implies that
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;c1.hashCode()==c2.hashCode()&lt;/tt&gt;.
+    </p>
+    <p style="margin-top:0;">
+      @see Object#equals(Object)
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+java.util.Spliterator			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#DlfBQWaGAqBkig52" class="ItemLink">spliterator</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Creates a {@link Spliterator} over the elements in this collection.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      Implementations should document characteristic values reported by the
+    </p>
+    <p style="margin-top:0;">
+      spliterator. &nbsp;Such characteristic values are not required to be reported
+    </p>
+    <p style="margin-top:0;">
+      if the spliterator reports {@link Spliterator#SIZED} and this collection
+    </p>
+    <p style="margin-top:0;">
+      contains no elements.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The default implementation should be overridden by subclasses that
+    </p>
+    <p style="margin-top:0;">
+      can return a more efficient spliterator. &nbsp;In order to
+    </p>
+    <p style="margin-top:0;">
+      preserve expected laziness behavior for the {@link #stream()} and
+    </p>
+    <p style="margin-top:0;">
+      {@link #parallelStream()}} methods, spliterators should either have the
+    </p>
+    <p style="margin-top:0;">
+      characteristic of {@code IMMUTABLE} or {@code CONCURRENT}, or be
+    </p>
+    <p style="margin-top:0;">
+      &lt;em&gt;&lt;a href=&quot;Spliterator.html#binding&quot;&gt;late-binding&lt;/a&gt;&lt;/em&gt;.
+    </p>
+    <p style="margin-top:0;">
+      If none of these is practical, the overriding class should describe the
+    </p>
+    <p style="margin-top:0;">
+      spliterator's documented policy of binding and structural interference,
+    </p>
+    <p style="margin-top:0;">
+      and should override the {@link #stream()} and {@link #parallelStream()}
+    </p>
+    <p style="margin-top:0;">
+      methods to create streams using a {@code Supplier} of the spliterator,
+    </p>
+    <p style="margin-top:0;">
+      as in:
+    </p>
+    <p style="margin-top:0;">
+      &lt;pre&gt;{@code
+    </p>
+    <p style="margin-top:0;">
+      Stream&lt;E&gt; s = StreamSupport.stream(() -&gt; spliterator(), 
+      spliteratorCharacteristics)
+    </p>
+    <p style="margin-top:0;">
+      }&lt;/pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;These requirements ensure that streams produced by the
+    </p>
+    <p style="margin-top:0;">
+      {@link #stream()} and {@link #parallelStream()} methods will reflect the
+    </p>
+    <p style="margin-top:0;">
+      contents of the collection as of initiation of the terminal stream
+    </p>
+    <p style="margin-top:0;">
+      operation.
+    </p>
+    <p style="margin-top:0;">
+      @implSpec The default implementation creates a
+    </p>
+    <p style="margin-top:0;">
+      &lt;em&gt;&lt;a href=&quot;Spliterator.html#binding&quot;&gt;late-binding&lt;/a&gt;&lt;/em&gt; spliterator
+    </p>
+    <p style="margin-top:0;">
+      from the collections's {@code Iterator}. &nbsp;The spliterator inherits the
+    </p>
+    <p style="margin-top:0;">
+      &lt;em&gt;fail-fast&lt;/em&gt; properties of the collection's iterator.
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      The created {@code Spliterator} reports {@link Spliterator#SIZED}.
+    </p>
+    <p style="margin-top:0;">
+      @implNote The created {@code Spliterator} additionally reports
+    </p>
+    <p style="margin-top:0;">
+      {@link Spliterator#SUBSIZED}.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;If a spliterator covers no elements then the reporting of additional
+    </p>
+    <p style="margin-top:0;">
+      characteristic values, beyond that of {@code SIZED} and {@code SUBSIZED},
+    </p>
+    <p style="margin-top:0;">
+      does not aid clients to control, specialize or simplify computation.
+    </p>
+    <p style="margin-top:0;">
+      However, this does enable shared use of an immutable and empty
+    </p>
+    <p style="margin-top:0;">
+      spliterator instance (see {@link Spliterators#emptySpliterator()}) for
+    </p>
+    <p style="margin-top:0;">
+      empty collections, and enables clients to determine if such a spliterator
+    </p>
+    <p style="margin-top:0;">
+      covers no elements.
+    </p>
+    <p style="margin-top:0;">
+      @since 1.8
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+java.util.stream.Stream			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#LlfBQWaGAqBkig56" class="ItemLink">stream</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns a sequential {@code Stream} with this collection as its source.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;This method should be overridden when the {@link #spliterator()}
+    </p>
+    <p style="margin-top:0;">
+      method cannot return a spliterator that is {@code IMMUTABLE},
+    </p>
+    <p style="margin-top:0;">
+      {@code CONCURRENT}, or &lt;em&gt;late-binding&lt;/em&gt;. (See {@link #spliterator()}
+    </p>
+    <p style="margin-top:0;">
+      for details.)
+    </p>
+    <p style="margin-top:0;">
+      @implSpec The default implementation creates a sequential {@code Stream} 
+      from the
+    </p>
+    <p style="margin-top:0;">
+      collection's {@code Spliterator}.
+    </p>
+    <p style="margin-top:0;">
+      @since 1.8
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+public			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+java.util.stream.Stream			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html#rlfBQWaGAqBkig58" class="ItemLink">parallelStream</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns a possibly parallel {@code Stream} with this collection as its
+    </p>
+    <p style="margin-top:0;">
+      source. &nbsp;It is allowable for this method to return a sequential stream.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;This method should be overridden when the {@link #spliterator()}
+    </p>
+    <p style="margin-top:0;">
+      method cannot return a spliterator that is {@code IMMUTABLE},
+    </p>
+    <p style="margin-top:0;">
+      {@code CONCURRENT}, or &lt;em&gt;late-binding&lt;/em&gt;. (See {@link #spliterator()}
+    </p>
+    <p style="margin-top:0;">
+      for details.)
+    </p>
+    <p style="margin-top:0;">
+      @implSpec The default implementation creates a parallel {@code Stream} 
+      from the
+    </p>
+    <p style="margin-top:0;">
+      collection's {@code Spliterator}.
+    </p>
+    <p style="margin-top:0;">
+      @since 1.8
+    </p>
+  </body>
+</html>
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Relationships Summary			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="6" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="6" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Begin</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">End</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="6" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Realization.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Realization.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_WlfBQWaGAqBkig4_.html#o0ShQWaGAqBkig8z" class="ItemLink"> : Realization</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_WlfBQWaGAqBkig4_.html" class="ItemLink">Collection : Class</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_JUShQWaGAqBkig7u.html" class="ItemLink">AbstractCollection : Class</a>				</span>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Generalization.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Generalization.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_WlfBQWaGAqBkig4_.html#blfBQWaGAqBkig5." class="ItemLink"> : Generalization</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_y1dBQWaGAqBkig4M.html" class="ItemLink">Iterable : Class</a>				</span>
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/Class.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/Class.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="Class_WlfBQWaGAqBkig4_.html" class="ItemLink">Collection : Class</a>				</span>
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Template Parameters			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="8" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="8" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Type</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Modifier</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Default Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="8" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td class="TableContent">
+E			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td class="TableContent">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Operations Details			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+<a name="elfBQWaGAqBkig5B"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">size</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns the number of elements in this collection. &nbsp;If this collection
+    </p>
+    <p style="margin-top:0;">
+      contains more than &lt;tt&gt;Integer.MAX_VALUE&lt;/tt&gt; elements, returns
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Integer.MAX_VALUE&lt;/tt&gt;.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      the number of elements in this collection
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_12J_QWaGAqBkigqF.html" class="ItemLink">int</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="elfBQWaGAqBkig5D"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">isEmpty</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns &lt;tt&gt;true&lt;/tt&gt; if this collection contains no elements.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      &lt;tt&gt;true&lt;/tt&gt; if this collection contains no elements
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name=".lfBQWaGAqBkig5F"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table border="0" cellpadding="0" width="100%" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">o</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Description</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      element whose presence in this collection is to be tested
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td class="TableContent">
+java.lang.Object						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">contains</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns &lt;tt&gt;true&lt;/tt&gt; if this collection contains the specified element.
+    </p>
+    <p style="margin-top:0;">
+      More formally, returns &lt;tt&gt;true&lt;/tt&gt; if and only if this collection
+    </p>
+    <p style="margin-top:0;">
+      contains at least one element &lt;tt&gt;e&lt;/tt&gt; such that
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;(o==null&amp;nbsp;?&amp;nbsp;e==null&amp;nbsp;:&amp;nbsp;o.equals(e))&lt;/tt&gt;.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      &lt;tt&gt;true&lt;/tt&gt; if this collection contains the specified element
+    </p>
+    <p style="margin-top:0;">
+      @throws NullPointerException if the specified element is null and this 
+      collection does not permit null elements
+    </p>
+    <p style="margin-top:0;">
+      (&lt;a href=&quot;#optional-restrictions&quot;&gt;optional&lt;/a&gt;)
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="hlfBQWaGAqBkig5J"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">iterator</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns an iterator over the elements in this collection. &nbsp;There are no
+    </p>
+    <p style="margin-top:0;">
+      guarantees concerning the order in which the elements are returned
+    </p>
+    <p style="margin-top:0;">
+      (unless this collection is an instance of some class that provides a
+    </p>
+    <p style="margin-top:0;">
+      guarantee).
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      an &lt;tt&gt;Iterator&lt;/tt&gt; over the elements in this collection
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">java.util.Iterator</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="hlfBQWaGAqBkig5L"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">toArray</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns an array containing all of the elements in this collection.
+    </p>
+    <p style="margin-top:0;">
+      If this collection makes any guarantees as to what order its elements
+    </p>
+    <p style="margin-top:0;">
+      are returned by its iterator, this method must return the elements in
+    </p>
+    <p style="margin-top:0;">
+      the same order.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The returned array will be &quot;safe&quot; in that no references to it are
+    </p>
+    <p style="margin-top:0;">
+      maintained by this collection. &nbsp;(In other words, this method must
+    </p>
+    <p style="margin-top:0;">
+      allocate a new array even if this collection is backed by an array).
+    </p>
+    <p style="margin-top:0;">
+      The caller is thus free to modify the returned array.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;This method acts as bridge between array-based and collection-based
+    </p>
+    <p style="margin-top:0;">
+      APIs.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Type Modifier</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">[]</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      an array containing all of the elements in this collection
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">java.lang.Object</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="RlfBQWaGAqBkig5N"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table border="0" cellpadding="0" width="100%" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">a</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Description</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      the array into which the elements of this collection are to be stored, 
+      if it is big enough; otherwise, a new array of the same
+    </p>
+    <p style="margin-top:0;">
+      runtime type is allocated for this purpose.
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type Modifier</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">[]</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td class="TableContent">
+T						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">toArray</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns an array containing all of the elements in this collection;
+    </p>
+    <p style="margin-top:0;">
+      the runtime type of the returned array is that of the specified array.
+    </p>
+    <p style="margin-top:0;">
+      If the collection fits in the specified array, it is returned therein.
+    </p>
+    <p style="margin-top:0;">
+      Otherwise, a new array is allocated with the runtime type of the
+    </p>
+    <p style="margin-top:0;">
+      specified array and the size of this collection.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;If this collection fits in the specified array with room to spare
+    </p>
+    <p style="margin-top:0;">
+      (i.e., the array has more elements than this collection), the element
+    </p>
+    <p style="margin-top:0;">
+      in the array immediately following the end of the collection is set to
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;null&lt;/tt&gt;. &nbsp;(This is useful in determining the length of this
+    </p>
+    <p style="margin-top:0;">
+      collection &lt;i&gt;only&lt;/i&gt; if the caller knows that this collection does
+    </p>
+    <p style="margin-top:0;">
+      not contain any &lt;tt&gt;null&lt;/tt&gt; elements.)
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;If this collection makes any guarantees as to what order its elements
+    </p>
+    <p style="margin-top:0;">
+      are returned by its iterator, this method must return the elements in
+    </p>
+    <p style="margin-top:0;">
+      the same order.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Like the {@link #toArray()} method, this method acts as bridge between
+    </p>
+    <p style="margin-top:0;">
+      array-based and collection-based APIs. &nbsp;Further, this method allows
+    </p>
+    <p style="margin-top:0;">
+      precise control over the runtime type of the output array, and may,
+    </p>
+    <p style="margin-top:0;">
+      under certain circumstances, be used to save allocation costs.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;Suppose &lt;tt&gt;x&lt;/tt&gt; is a collection known to contain only strings.
+    </p>
+    <p style="margin-top:0;">
+      The following code can be used to dump the collection into a newly
+    </p>
+    <p style="margin-top:0;">
+      allocated array of &lt;tt&gt;String&lt;/tt&gt;:
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      String[] y = x.toArray(new String[0]);&lt;/pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      Note that &lt;tt&gt;toArray(new Object[0])&lt;/tt&gt; is identical in function to
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;toArray()&lt;/tt&gt;.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Type Modifier</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">[]</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      an array containing all of the elements in this collection
+    </p>
+    <p style="margin-top:0;">
+      @throws NullPointerException if the specified array is null
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">T</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="JlfBQWaGAqBkig5S"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table border="0" cellpadding="0" width="100%" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">e</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Description</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      element whose presence in this collection is to be ensured
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td class="TableContent">
+E						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">add</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Ensures that this collection contains the specified element (optional
+    </p>
+    <p style="margin-top:0;">
+      operation). &nbsp;Returns &lt;tt&gt;true&lt;/tt&gt; if this collection changed as a
+    </p>
+    <p style="margin-top:0;">
+      result of the call. &nbsp;(Returns &lt;tt&gt;false&lt;/tt&gt; if this collection does
+    </p>
+    <p style="margin-top:0;">
+      not permit duplicates and already contains the specified element.)&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      Collections that support this operation may place limitations on what
+    </p>
+    <p style="margin-top:0;">
+      elements may be added to this collection. &nbsp;In particular, some
+    </p>
+    <p style="margin-top:0;">
+      collections will refuse to add &lt;tt&gt;null&lt;/tt&gt; elements, and others will
+    </p>
+    <p style="margin-top:0;">
+      impose restrictions on the type of elements that may be added.
+    </p>
+    <p style="margin-top:0;">
+      Collection classes should clearly specify in their documentation any
+    </p>
+    <p style="margin-top:0;">
+      restrictions on what elements may be added.&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      If a collection refuses to add a particular element for any reason
+    </p>
+    <p style="margin-top:0;">
+      other than that it already contains the element, it &lt;i&gt;must&lt;/i&gt; throw
+    </p>
+    <p style="margin-top:0;">
+      an exception (rather than returning &lt;tt&gt;false&lt;/tt&gt;). &nbsp;This preserves
+    </p>
+    <p style="margin-top:0;">
+      the invariant that a collection always contains the specified element
+    </p>
+    <p style="margin-top:0;">
+      after this call returns.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      &lt;tt&gt;true&lt;/tt&gt; if this collection changed as a result of the call
+    </p>
+    <p style="margin-top:0;">
+      @throws IllegalStateException if the element cannot be added at this 
+      time due to insertion restrictions
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="plfBQWaGAqBkig5W"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table border="0" cellpadding="0" width="100%" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">o</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Description</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      element to be removed from this collection, if present
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td class="TableContent">
+java.lang.Object						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">remove</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Removes a single instance of the specified element from this
+    </p>
+    <p style="margin-top:0;">
+      collection, if it is present (optional operation). &nbsp;More formally,
+    </p>
+    <p style="margin-top:0;">
+      removes an element &lt;tt&gt;e&lt;/tt&gt; such that
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;(o==null&amp;nbsp;?&amp;nbsp;e==null&amp;nbsp;:&amp;nbsp;o.equals(e))&lt;/tt&gt;, if
+    </p>
+    <p style="margin-top:0;">
+      this collection contains one or more such elements. &nbsp;Returns
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;true&lt;/tt&gt; if this collection contained the specified element (or
+    </p>
+    <p style="margin-top:0;">
+      equivalently, if this collection changed as a result of the call).
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      &lt;tt&gt;true&lt;/tt&gt; if an element was removed as a result of this call
+    </p>
+    <p style="margin-top:0;">
+      @throws UnsupportedOperationException if the &lt;tt&gt;remove&lt;/tt&gt; operation 
+      is not supported by this collection
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="5lfBQWaGAqBkig5a"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table border="0" cellpadding="0" width="100%" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">c</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Description</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      collection to be checked for containment in this collection
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html" class="ItemLink">Collection</a>							</span>
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">containsAll</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns &lt;tt&gt;true&lt;/tt&gt; if this collection contains all of the elements
+    </p>
+    <p style="margin-top:0;">
+      in the specified collection.
+    </p>
+    <p style="margin-top:0;">
+      @see #contains(Object)
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      &lt;tt&gt;true&lt;/tt&gt; if this collection contains all of the elements in the 
+      specified collection
+    </p>
+    <p style="margin-top:0;">
+      @throws NullPointerException if the specified collection contains one or 
+      more null elements and this collection does not permit null
+    </p>
+    <p style="margin-top:0;">
+      elements
+    </p>
+    <p style="margin-top:0;">
+      (&lt;a href=&quot;#optional-restrictions&quot;&gt;optional&lt;/a&gt;),
+    </p>
+    <p style="margin-top:0;">
+      or if the specified collection is null.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="FlfBQWaGAqBkig5e"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table border="0" cellpadding="0" width="100%" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">c</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Description</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      collection containing elements to be added to this collection
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html" class="ItemLink">Collection</a>							</span>
+<E>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">addAll</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Adds all of the elements in the specified collection to this collection
+    </p>
+    <p style="margin-top:0;">
+      (optional operation). &nbsp;The behavior of this operation is undefined if
+    </p>
+    <p style="margin-top:0;">
+      the specified collection is modified while the operation is in progress.
+    </p>
+    <p style="margin-top:0;">
+      (This implies that the behavior of this call is undefined if the
+    </p>
+    <p style="margin-top:0;">
+      specified collection is this collection, and this collection is
+    </p>
+    <p style="margin-top:0;">
+      nonempty.)
+    </p>
+    <p style="margin-top:0;">
+      @see #add(Object)
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      &lt;tt&gt;true&lt;/tt&gt; if this collection changed as a result of the call
+    </p>
+    <p style="margin-top:0;">
+      @throws IllegalStateException if not all the elements can be added at 
+      this time due to insertion restrictions
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="llfBQWaGAqBkig5i"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table border="0" cellpadding="0" width="100%" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">c</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Description</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      collection containing elements to be removed from this collection
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html" class="ItemLink">Collection</a>							</span>
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">removeAll</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Removes all of this collection's elements that are also contained in the
+    </p>
+    <p style="margin-top:0;">
+      specified collection (optional operation). &nbsp;After this call returns,
+    </p>
+    <p style="margin-top:0;">
+      this collection will contain no elements in common with the specified
+    </p>
+    <p style="margin-top:0;">
+      collection.
+    </p>
+    <p style="margin-top:0;">
+      @see #contains(Object)
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      &lt;tt&gt;true&lt;/tt&gt; if this collection changed as a result of the call
+    </p>
+    <p style="margin-top:0;">
+      @throws NullPointerException if this collection contains one or more 
+      null elements and the specified collection does not support
+    </p>
+    <p style="margin-top:0;">
+      null elements
+    </p>
+    <p style="margin-top:0;">
+      (&lt;a href=&quot;#optional-restrictions&quot;&gt;optional&lt;/a&gt;),
+    </p>
+    <p style="margin-top:0;">
+      or if the specified collection is null
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="1lfBQWaGAqBkig5m"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table border="0" cellpadding="0" width="100%" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">filter</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Description</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      a predicate which returns {@code true} for elements to be removed
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td class="TableContent">
+java.util.function.Predicate<E>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">removeIf</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Removes all of the elements of this collection that satisfy the given
+    </p>
+    <p style="margin-top:0;">
+      predicate. &nbsp;Errors or runtime exceptions thrown during iteration or by
+    </p>
+    <p style="margin-top:0;">
+      the predicate are relayed to the caller.
+    </p>
+    <p style="margin-top:0;">
+      @implSpec The default implementation traverses all elements of the 
+      collection using
+    </p>
+    <p style="margin-top:0;">
+      its {@link #iterator}. &nbsp;Each matching element is removed using
+    </p>
+    <p style="margin-top:0;">
+      {@link Iterator#remove()}. &nbsp;If the collection's iterator does not
+    </p>
+    <p style="margin-top:0;">
+      support removal then an {@code UnsupportedOperationException} will be
+    </p>
+    <p style="margin-top:0;">
+      thrown on the first matching element.
+    </p>
+    <p style="margin-top:0;">
+      @since 1.8
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      {@code true} if any elements were removed
+    </p>
+    <p style="margin-top:0;">
+      @throws UnsupportedOperationException if elements cannot be removed from 
+      this collection. &nbsp;Implementations may throw this exception if a
+    </p>
+    <p style="margin-top:0;">
+      matching element cannot be removed or if, in general, removal is not
+    </p>
+    <p style="margin-top:0;">
+      supported.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="NlfBQWaGAqBkig5q"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table border="0" cellpadding="0" width="100%" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">c</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Description</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      collection containing elements to be retained in this collection
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td>
+							<span class="TableContent">
+<a href="Class_WlfBQWaGAqBkig4_.html" class="ItemLink">Collection</a>							</span>
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">retainAll</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Retains only the elements in this collection that are contained in the
+    </p>
+    <p style="margin-top:0;">
+      specified collection (optional operation). &nbsp;In other words, removes from
+    </p>
+    <p style="margin-top:0;">
+      this collection all of its elements that are not contained in the
+    </p>
+    <p style="margin-top:0;">
+      specified collection.
+    </p>
+    <p style="margin-top:0;">
+      @see #contains(Object)
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      &lt;tt&gt;true&lt;/tt&gt; if this collection changed as a result of the call
+    </p>
+    <p style="margin-top:0;">
+      @throws NullPointerException if this collection contains one or more 
+      null elements and the specified collection does not permit null
+    </p>
+    <p style="margin-top:0;">
+      elements
+    </p>
+    <p style="margin-top:0;">
+      (&lt;a href=&quot;#optional-restrictions&quot;&gt;optional&lt;/a&gt;),
+    </p>
+    <p style="margin-top:0;">
+      or if the specified collection is null
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="dlfBQWaGAqBkig5u"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">clear</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Removes all of the elements from this collection (optional operation).
+    </p>
+    <p style="margin-top:0;">
+      The collection will be empty after this method returns.
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      @throws UnsupportedOperationException if the &lt;tt&gt;clear&lt;/tt&gt; operation is 
+      not supported by this collection
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_12J_QWaGAqBkigqI.html" class="ItemLink">void</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="dlfBQWaGAqBkig5w"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+				<table border="0" cellpadding="0" width="100%" cellspacing="0">
+					<tr class="SubtableHeader">
+						<td class="TableCellSpaceHolder10Px">
+						</td>
+						<td width="25%">
+<span class="TableHeaderText">Name</span>						</td>
+						<td class="TableCellSpaceHolder20Px">
+						</td>
+						<td>
+<span class="TableHeaderText">Value</span>						</td>
+					</tr>
+					<tr>
+						<td colSpan="4" class="TableHeaderLine2">
+						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Name</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">o</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Description</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      object to be compared for equality with this collection
+    </p>
+  </body>
+</html>
+</span>						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Multiplicity</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Unspecified</span>						</td>
+					</tr>
+					<tr class="TableRow2">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Type</span>						</td>
+						<td>
+						</td>
+						<td class="TableContent">
+java.lang.Object						</td>
+					</tr>
+					<tr class="TableRow1">
+						<td>
+						</td>
+						<td>
+<span class="TableContent">Direction</span>						</td>
+						<td>
+						</td>
+						<td>
+<span class="TableContent">inout</span>						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">equals</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Compares the specified object with this collection for equality. &lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      While the &lt;tt&gt;Collection&lt;/tt&gt; interface adds no stipulations to the
+    </p>
+    <p style="margin-top:0;">
+      general contract for the &lt;tt&gt;Object.equals&lt;/tt&gt;, programmers who
+    </p>
+    <p style="margin-top:0;">
+      implement the &lt;tt&gt;Collection&lt;/tt&gt; interface &quot;directly&quot; (in other words,
+    </p>
+    <p style="margin-top:0;">
+      create a class that is a &lt;tt&gt;Collection&lt;/tt&gt; but is not a &lt;tt&gt;Set&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      or a &lt;tt&gt;List&lt;/tt&gt;) must exercise care if they choose to override the
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Object.equals&lt;/tt&gt;. &nbsp;It is not necessary to do so, and the simplest
+    </p>
+    <p style="margin-top:0;">
+      course of action is to rely on &lt;tt&gt;Object&lt;/tt&gt;'s implementation, but
+    </p>
+    <p style="margin-top:0;">
+      the implementor may wish to implement a &quot;value comparison&quot; in place of
+    </p>
+    <p style="margin-top:0;">
+      the default &quot;reference comparison.&quot; &nbsp;(The &lt;tt&gt;List&lt;/tt&gt; and
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Set&lt;/tt&gt; interfaces mandate such value comparisons.)&lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      The general contract for the &lt;tt&gt;Object.equals&lt;/tt&gt; method states that
+    </p>
+    <p style="margin-top:0;">
+      equals must be symmetric (in other words, &lt;tt&gt;a.equals(b)&lt;/tt&gt; if and
+    </p>
+    <p style="margin-top:0;">
+      only if &lt;tt&gt;b.equals(a)&lt;/tt&gt;). &nbsp;The contracts for &lt;tt&gt;List.equals&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      and &lt;tt&gt;Set.equals&lt;/tt&gt; state that lists are only equal to other lists,
+    </p>
+    <p style="margin-top:0;">
+      and sets to other sets. &nbsp;Thus, a custom &lt;tt&gt;equals&lt;/tt&gt; method for a
+    </p>
+    <p style="margin-top:0;">
+      collection class that implements neither the &lt;tt&gt;List&lt;/tt&gt; nor
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Set&lt;/tt&gt; interface must return &lt;tt&gt;false&lt;/tt&gt; when this collection
+    </p>
+    <p style="margin-top:0;">
+      is compared to any list or set. &nbsp;(By the same logic, it is not possible
+    </p>
+    <p style="margin-top:0;">
+      to write a class that correctly implements both the &lt;tt&gt;Set&lt;/tt&gt; and
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;List&lt;/tt&gt; interfaces.)
+    </p>
+    <p style="margin-top:0;">
+      @see List#equals(Object)
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      &lt;tt&gt;true&lt;/tt&gt; if the specified object is equal to this collection
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_52J_QWaGAqBkigqA.html" class="ItemLink">boolean</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="DlfBQWaGAqBkig50"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">hashCode</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns the hash code value for this collection. &nbsp;While the
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;Collection&lt;/tt&gt; interface adds no stipulations to the general
+    </p>
+    <p style="margin-top:0;">
+      contract for the &lt;tt&gt;Object.hashCode&lt;/tt&gt; method, programmers should
+    </p>
+    <p style="margin-top:0;">
+      take note that any class that overrides the &lt;tt&gt;Object.equals&lt;/tt&gt;
+    </p>
+    <p style="margin-top:0;">
+      method must also override the &lt;tt&gt;Object.hashCode&lt;/tt&gt; method in order
+    </p>
+    <p style="margin-top:0;">
+      to satisfy the general contract for the &lt;tt&gt;Object.hashCode&lt;/tt&gt; method.
+    </p>
+    <p style="margin-top:0;">
+      In particular, &lt;tt&gt;c1.equals(c2)&lt;/tt&gt; implies that
+    </p>
+    <p style="margin-top:0;">
+      &lt;tt&gt;c1.hashCode()==c2.hashCode()&lt;/tt&gt;.
+    </p>
+    <p style="margin-top:0;">
+      @see Object#equals(Object)
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      the hash code value for this collection
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+<a href="DataType_12J_QWaGAqBkigqF.html" class="ItemLink">int</a>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="DlfBQWaGAqBkig52"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">spliterator</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Creates a {@link Spliterator} over the elements in this collection.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      Implementations should document characteristic values reported by the
+    </p>
+    <p style="margin-top:0;">
+      spliterator. &nbsp;Such characteristic values are not required to be reported
+    </p>
+    <p style="margin-top:0;">
+      if the spliterator reports {@link Spliterator#SIZED} and this collection
+    </p>
+    <p style="margin-top:0;">
+      contains no elements.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;The default implementation should be overridden by subclasses that
+    </p>
+    <p style="margin-top:0;">
+      can return a more efficient spliterator. &nbsp;In order to
+    </p>
+    <p style="margin-top:0;">
+      preserve expected laziness behavior for the {@link #stream()} and
+    </p>
+    <p style="margin-top:0;">
+      {@link #parallelStream()}} methods, spliterators should either have the
+    </p>
+    <p style="margin-top:0;">
+      characteristic of {@code IMMUTABLE} or {@code CONCURRENT}, or be
+    </p>
+    <p style="margin-top:0;">
+      &lt;em&gt;&lt;a href=&quot;Spliterator.html#binding&quot;&gt;late-binding&lt;/a&gt;&lt;/em&gt;.
+    </p>
+    <p style="margin-top:0;">
+      If none of these is practical, the overriding class should describe the
+    </p>
+    <p style="margin-top:0;">
+      spliterator's documented policy of binding and structural interference,
+    </p>
+    <p style="margin-top:0;">
+      and should override the {@link #stream()} and {@link #parallelStream()}
+    </p>
+    <p style="margin-top:0;">
+      methods to create streams using a {@code Supplier} of the spliterator,
+    </p>
+    <p style="margin-top:0;">
+      as in:
+    </p>
+    <p style="margin-top:0;">
+      &lt;pre&gt;{@code
+    </p>
+    <p style="margin-top:0;">
+      Stream&lt;E&gt; s = StreamSupport.stream(() -&gt; spliterator(), 
+      spliteratorCharacteristics)
+    </p>
+    <p style="margin-top:0;">
+      }&lt;/pre&gt;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;These requirements ensure that streams produced by the
+    </p>
+    <p style="margin-top:0;">
+      {@link #stream()} and {@link #parallelStream()} methods will reflect the
+    </p>
+    <p style="margin-top:0;">
+      contents of the collection as of initiation of the terminal stream
+    </p>
+    <p style="margin-top:0;">
+      operation.
+    </p>
+    <p style="margin-top:0;">
+      @implSpec The default implementation creates a
+    </p>
+    <p style="margin-top:0;">
+      &lt;em&gt;&lt;a href=&quot;Spliterator.html#binding&quot;&gt;late-binding&lt;/a&gt;&lt;/em&gt; spliterator
+    </p>
+    <p style="margin-top:0;">
+      from the collections's {@code Iterator}. &nbsp;The spliterator inherits the
+    </p>
+    <p style="margin-top:0;">
+      &lt;em&gt;fail-fast&lt;/em&gt; properties of the collection's iterator.
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;
+    </p>
+    <p style="margin-top:0;">
+      The created {@code Spliterator} reports {@link Spliterator#SIZED}.
+    </p>
+    <p style="margin-top:0;">
+      @implNote The created {@code Spliterator} additionally reports
+    </p>
+    <p style="margin-top:0;">
+      {@link Spliterator#SUBSIZED}.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;If a spliterator covers no elements then the reporting of additional
+    </p>
+    <p style="margin-top:0;">
+      characteristic values, beyond that of {@code SIZED} and {@code SUBSIZED},
+    </p>
+    <p style="margin-top:0;">
+      does not aid clients to control, specialize or simplify computation.
+    </p>
+    <p style="margin-top:0;">
+      However, this does enable shared use of an immutable and empty
+    </p>
+    <p style="margin-top:0;">
+      spliterator instance (see {@link Spliterators#emptySpliterator()}) for
+    </p>
+    <p style="margin-top:0;">
+      empty collections, and enables clients to determine if such a spliterator
+    </p>
+    <p style="margin-top:0;">
+      covers no elements.
+    </p>
+    <p style="margin-top:0;">
+      @since 1.8
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      a {@code Spliterator} over the elements in this collection
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">java.util.Spliterator</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="LlfBQWaGAqBkig56"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">stream</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns a sequential {@code Stream} with this collection as its source.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;This method should be overridden when the {@link #spliterator()}
+    </p>
+    <p style="margin-top:0;">
+      method cannot return a spliterator that is {@code IMMUTABLE},
+    </p>
+    <p style="margin-top:0;">
+      {@code CONCURRENT}, or &lt;em&gt;late-binding&lt;/em&gt;. (See {@link #spliterator()}
+    </p>
+    <p style="margin-top:0;">
+      for details.)
+    </p>
+    <p style="margin-top:0;">
+      @implSpec The default implementation creates a sequential {@code Stream} 
+      from the
+    </p>
+    <p style="margin-top:0;">
+      collection's {@code Spliterator}.
+    </p>
+    <p style="margin-top:0;">
+      @since 1.8
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      a sequential {@code Stream} over the elements in this collection
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">java.util.stream.Stream</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="rlfBQWaGAqBkig58"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Parameters</span>			</td>
+			<td>
+			</td>
+			<td>
+			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">parallelStream</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      Returns a possibly parallel {@code Stream} with this collection as its
+    </p>
+    <p style="margin-top:0;">
+      source. &nbsp;It is allowable for this method to return a sequential stream.
+    </p>
+    <p style="margin-top:0;">
+      &nbsp;
+    </p>
+    <p style="margin-top:0;">
+      &lt;p&gt;This method should be overridden when the {@link #spliterator()}
+    </p>
+    <p style="margin-top:0;">
+      method cannot return a spliterator that is {@code IMMUTABLE},
+    </p>
+    <p style="margin-top:0;">
+      {@code CONCURRENT}, or &lt;em&gt;late-binding&lt;/em&gt;. (See {@link #spliterator()}
+    </p>
+    <p style="margin-top:0;">
+      for details.)
+    </p>
+    <p style="margin-top:0;">
+      @implSpec The default implementation creates a parallel {@code Stream} 
+      from the
+    </p>
+    <p style="margin-top:0;">
+      collection's {@code Spliterator}.
+    </p>
+    <p style="margin-top:0;">
+      @since 1.8
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Static</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Leaf</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Upper</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">1</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visible</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Ordered</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unique</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">true</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type Description</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent Documentation"><html>
+  <head>
+    
+  </head>
+  <body>
+    <p style="margin-top:0;">
+      a possibly parallel {@code Stream} over the elements in this collection
+    </p>
+  </body>
+</html>
+</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Return Type</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">java.util.stream.Stream</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">public</span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Scope</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">instance</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Final</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Synchronized</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Native</span>			</td>
+			<td>
+			</td>
+			<td class="TableContent">
+false			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Query</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Abstract</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">false</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Relationships Detail			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+<a name="o0ShQWaGAqBkig8z"></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td style="height: 5px;">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+<a name="blfBQWaGAqBkig5."></a>	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td width="25%">
+<span class="TableHeaderText">Name</span>			</td>
+			<td class="TableCellSpaceHolder20Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Value</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Name</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent"></span>			</td>
+		</tr>
+		<tr class="TableRow2">
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Visibility</span>			</td>
+			<td>
+			</td>
+			<td>
+<span class="TableContent">Unspecified</span>			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td style="height: 5px;">
+			</td>
+		</tr>
+	</table>
+	<p>
+	</p>
+	<p>
+	</p>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="Category">
+Appears In			</td>
+		</tr>
+		<tr>
+			<td class="TableCellSpaceHolder5PxTall">
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td colSpan="4" class="TableHeaderLine">
+			</td>
+		</tr>
+		<tr>
+			<td colSpan="4" class="TableHeaderLine1">
+			</td>
+		</tr>
+		<tr class="TableHeader">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+<span class="TableHeaderText">Diagram</span>			</td>
+		</tr>
+		<tr>
+			<td colSpan="2" class="TableHeaderLine2">
+			</td>
+		</tr>
+		<tr class="TableRow1">
+			<td class="TableCellSpaceHolder10Px">
+			</td>
+			<td>
+				<span class="TableContent">
+					<div style="float: left; width: 18px !important;height: 18px !important;background-image:url(../images/icons/ClassDiagram.png) !important; background-image:url(''); filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../images/icons/ClassDiagram.png'); background-repeat: no-repeat;">
+					</div>
+&nbsp;<a href="ClassDiagram_VkQhQWaGAqBkig6x.html" class="ItemLink">Collection : Class Diagram</a>				</span>
+			</td>
+		</tr>
+	</table>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="TableCellSpaceHolder1PxTall">
+			</td>
+		</tr>
+		<tr>
+			<td class="TableFooter">
+			</td>
+		</tr>
+	</table>
+	<div style="height: 20px;">
+	</div>
+	<table border="0" cellpadding="0" width="100%" cellspacing="0">
+		<tr>
+			<td class="FooterLine">
+			</td>
+		</tr>
+	</table>
+	<div class="HeaderText">
+Diagramas Java	</div>
+</body>
+</html>
