@@ -12,6 +12,8 @@ public class Factura {
     private Item items;
     private Cliente cliente;
 
+
+
     public int getIdFactura() {
         return idFactura;
     }

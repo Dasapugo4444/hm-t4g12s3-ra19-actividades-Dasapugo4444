@@ -1,6 +1,5 @@
 package co.edu.sena.actividad03;
 
-import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Objects;
 
@@ -11,6 +10,7 @@ public class Cliente {
     private String direccion;
     private String telefono;
     private Collection<Factura> Factura;
+
 
     public Collection<Factura> getFactura() {
         return Factura;

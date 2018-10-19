@@ -10,6 +10,8 @@ public class Item {
     private Producto productos;
     private Factura factura;
 
+    
+
     public int getCantidad() {
         return cantidad;
     }
